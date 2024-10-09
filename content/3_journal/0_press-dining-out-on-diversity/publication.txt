@@ -1,0 +1,33 @@
+Title: Press: Dining out on Diversity in Europe
+
+----
+
+Maincontent: [{"content":{"text":"<p>SKP was featured in this article alongside other food-oriented projects, celebrating multiculturalism and the power of food to bring people together. <\/p><p><\/p><p>Check it out here: <\/p><p><a href=\"https:\/\/hyphenonline.com\/2023\/11\/06\/dining-out-on-diversity-in-europe-refugees-restauranteurs\/\" rel=\"noopener noreferrer\">https:\/\/hyphenonline.com\/2023\/11\/06\/dining-out-on-diversity-in-europe-refugees-restauranteurs\/<\/a><\/p><p><\/p>"},"id":"3650ec2a-df2b-458a-a6a3-1ae81d30fa3e","isHidden":false,"type":"text"}]
+
+----
+
+Published: 2023-11-06
+
+----
+
+Cover: - file://8Si8a24TlshRlsUp
+
+----
+
+Author: - user://9Qv24DwA
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: 07ysriw504WUOSFb

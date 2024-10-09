@@ -1,0 +1,33 @@
+Title: Florian's Teurgoule
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["recipe-deco.png"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"52397c96-481a-4598-81a5-36fdefe35d79","isHidden":false,"type":"image"},{"content":{"text":"<p>This sweet, comforting dessert was shared by our volunteer photographer Florian.<\/p><p>\u201cMy grandmother, who was a very good cook, used to prepare a pudding called \u201cTeurgoule\u201d when there was a family gathering in the countryside house where she lived with my grandfather. The Teurgoule is a traditional recipe from Normandy, where they both came from. It\u2019s very typical from this region and impossible to find in the rest of France!<\/p><p>I\u2019ve always loved it for its sweet flavours of caramel, cream and cinnamon, but also because it\u2019s the taste of\u00a0my\u00a0childhood\u2026\u201d<\/p>"},"id":"d4129aa8-2e44-4906-ae6a-a18f77cc6598","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["rice-pudding-ga25bbe4e1_1920.jpg"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"9a14c49b-3d38-4732-a2b9-026cf80eb110","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>Ingredients for 6 people:<\/strong><\/p><p>130\u00a0grams\u00a0arborio rice or any other round rice<\/p><p>100\u00a0grams\u00a0white sugar<\/p><p>100\u00a0grams\u00a0white sugar<\/p><p>1\u00a0litre\u00a0full fat milk<\/p><p>1\u00a0teaspoon\u00a0vanilla essence or 1 vanilla pod cut lengthwise<\/p><p>1 teaspoon\u00a0cinnamon powder<\/p>"},"id":"18fe4f8e-c933-4431-9824-ee89efd8fb0e","isHidden":false,"type":"text"},{"content":{"text":"<p><strong>Method:<\/strong><\/p><p>Pre-heat the oven to 150\u00b0C.<\/p><p>In a baking dish, combine the rice, sugar, vanilla and cinnamon powder. Heat up the milk to almost simmer and pour over the rice mixture.<\/p><p>Place the baking dish in the oven and bake for 1 hour.<\/p><p>Reduce the heat to 120\u00b0C and cook for a further 2\u00bd hours.<\/p><p>Switch off the oven and let the rice cool for 20 minutes. Serve warm.<\/p><p>This teurgoule can be kept refrigerated for up to one week plus it freezes well too.<\/p><p><\/p><p><strong>Note: <\/strong>The slow baking is key to creating the delicious, chewy, caramelized top!<\/p>"},"id":"ce5a4937-e8ff-4836-9f4c-67b39737b847","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["recipe-deco.png"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"d9ecbbed-6b8f-4cbf-8d92-16d28356b9a1","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2022-11-22
+
+----
+
+Cover: - rice-pudding-ga25bbe4e1_1920.jpg
+
+----
+
+Author: - Rrjt8awb
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: tibxA95je9RPPg0G

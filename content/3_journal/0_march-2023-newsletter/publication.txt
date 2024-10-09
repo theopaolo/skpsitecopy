@@ -1,0 +1,33 @@
+Title: What's Cooking 2023?
+
+----
+
+Maincontent: [{"content":{"text":"<p><\/p><p><strong>Dear Friends,\u00a0<\/strong><\/p><p><br><strong>The beginning of the year has flown by and here at Saffron Kitchen Project it\u2019s been non stop! Our incredible team has been busy in action, chopping, cooking and creating delicious and healthy meals, prepared with love and care.<\/strong><\/p>"},"id":"c9c3ea6e-fc46-4e0f-8e21-da515a464bf8","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/RAyQlclTf0F6uizX"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"f25cc2e3-d3dd-4845-93a0-5505ca1e2f0e","isHidden":false,"type":"image"},{"content":{"level":"h2","text":"<br>                                      In just under a year we have..."},"id":"7e41fbd9-0d02-48eb-be77-20a04dcb95bf","isHidden":false,"type":"heading"},{"content":{"location":"kirby","image":["file:\/\/yvZRHKzmy3sotwUD"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"459b1669-9de4-4845-83a0-de7f3d3dda0a","isHidden":false,"type":"image"},{"content":{"text":"<p><\/p><p><strong>Recent price increases for basic products have contributed to the cost of living crisis, forcing more and more people towards the poverty line, and bringing new challenges for our team as we try to fulfil the continued and increasing demand for food aid.\u00a0<\/strong><br><br><strong>To help us meet these demands, we're hosting a fundraising event later this year to spread awareness and support\u00a0for the SKP mission - keep your eyes peeled to hear more!<\/strong><br><br><strong>As always, we would like to thank you for your generosity and support - we couldn't do it without you!<br><br><br>With love and solidarity,<br><br>The SKP Team<\/strong><\/p><p><\/p>"},"id":"76da74ec-2234-4a37-b1b0-5ffd60d08a1f","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/JQuuhcx17L9So8Gx"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"4feb346e-03e7-4049-b91a-3bd0862d2e6a","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2023-03-21
+
+----
+
+Cover: - file://RAyQlclTf0F6uizX
+
+----
+
+Author: - user://Rrjt8awb
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: hbSDNewZy2b4YMli

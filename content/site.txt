@@ -1,0 +1,37 @@
+Title: SKP
+
+----
+
+Seotitle: Saffron Kitchen Project
+
+----
+
+Seodescription: Our Story Saffron Kitchen Project is about people, food, building community and creating lasting opportunities for vulnerable people in Athens. Food is about love, comfort and hospitality. There is a kindness in the practice of preparing meals for others, the perfect opportunity to make people feel welcome. We’re here to support each other, using food as the tool kit.
+
+----
+
+Seoimage: - file://6mA1PTOYr9ih6eXo
+
+----
+
+Skpmail: yassas@saffronkitchenproject.org
+
+----
+
+Evelinamail: evelina@saffronkitchenproject.org
+
+----
+
+Socialtwitterurl: 
+
+----
+
+Seotags: Saffron Kitchen Project, opportunities people in Athens, culinary community, food love, opportunities for refugees, opportunities for people with refugee backgrounds
+
+----
+
+Yearlyreports: - file://bL5cSTaxVcwOvbkN
+
+----
+
+Yerlyreports: 

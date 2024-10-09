@@ -1,0 +1,5 @@
+Uuid: OSTsZUNfem7dUglF
+
+----
+
+Template: blocks/image

@@ -1,0 +1,218 @@
+Title: About
+
+----
+
+Skpteam:
+
+- 
+  profile:
+    - file://lCtvB52foS438kL4
+  name: Evelina Eskenazi
+  subtitle: 'Founder & Director'
+  bio: |
+    Evelina's six years in the food industry, working and training in restaurants and ultimately setting up her own catering company, helped her to recognise the importance of food and the joy it can bring to people. She spent the following five years working in humanitarian aid, running a warehouse in a refugee camp and setting up as well as managing an education and community centre. This helped refine her aptitude in working with vulnerable people and running teams of staff and volunteers. All of this experience has equipped her with the necessary skills to start Saffron Kitchen Project, whose goal is to provide both opportunity, and a sense of community, for refugees and vulnerable people.
+    
+    Her favourite meal is pasta cooked by someone else (obviously by someone who can cook pasta).
+- 
+  profile:
+    - file://5V9P5eG6ovykiZF4
+  name: Adel Boshi
+  subtitle: Head Chef
+  bio: |
+    As a young boy growing up in Damascus, Syria, Adel would try to cook with his mother, but she usually kicked him out of the kitchen because he was too messy. Nevertheless, he went on to graduate from culinary school and began working in restaurants in 2005, making his way from assistant to chef. In 2011, Adel left Syria for Egypt, where he continued working in restaurants. He came to Europe in 2015 and volunteered with the NGO Meet ’n Eat in Berlin. SKP is his first job cooking in Athens and he is excited to help the project grow.
+    
+    Adel’s favourite meal is mandi, a yellow rice, chicken, and tomato sauce dish, which his mother taught him to make.
+- 
+  profile:
+    - file://enuEZA9XNgSnmN2V
+  name: 'Mamadou Oury Diallo '
+  subtitle: Sous Chef
+  bio: |
+    Arriving in Greece from Conakry, Guinea in 2020, Mamadou started working with Saffron Kitchen Project back in 2022 after completing his sponsored, IEK culinary training with us. Back in Guinea, Mamadou completed a degree in Business Administration and believes some of his strengths include being organised, sociable and a good listener. His favourite part of working with SKP is the empathy involved with the project and providing meals to those in need. His keen interest in developing his skills and love for cooking have made him a fantastic member of the team. This enthusiasm and dedication has led him to grow from a volunteer to our Sous Chef!
+    
+    His favourite meal is Latchiri, a Guinean dish consisting of corn cous cous with a yoghurt sauce.
+- 
+  profile:
+    - file://qAuMEzOdFQZFs8aB
+  name: Daphne Magkanioti
+  subtitle: Operations Manager
+  bio: |
+    Daphne has a background working in education both in Greece and in the U.K. and she graduated from videography school in Athens.
+    She has worked within the Athens NGO field for the last couple of years. Daphne is particularly interested in social inclusion and is commited in tackling this issue with her work in our IEK vocational training project. Daphne is the integral link to our local culinary community and represents SKP with all our vendors.
+    
+    Her favourite dish is pasta in any shape or form!
+- 
+  profile:
+    - file://mSOBmcxTyZiQ6EYY
+  name: Amani Mohsen
+  subtitle: 'Kitchen Assistant '
+  bio: |
+    Amani has been living in Greece since 2013, but originally comes from Asyut, Egypt where she was a professor of Mathematics. She was one of SKP's IEK graduates from 2023 and worked with a Greek Chef before joining our team. As a mother of three, she loves the kitchen and the art of feeding others, meaning she fits in perfectly here at Saffron Kitchen Project. Amani says she doesn’t like to take life too seriously and that she loves listening to music and singing whilst cooking.
+    
+    Her favourite meal is macaroni with a béchamel sauce.
+- 
+  profile:
+    - file://PCuM3PXNb6Y8h8GN
+  name: 'Claudia Tomarchio '
+  subtitle: Grants Officer
+  bio: |
+    Hailing from and residing in Italy, Claudia has been working with SKP since January 2023. With over eight years of experience in the humanitarian sector, with a particular focus on migration and working with unaccompanied children, she has found herself in various hands-on roles in different parts of the world. Alongside this, Claudia has helped numerous organisations of different sizes with grant writing and applications, as well as experience working with the EU, UNCHR, and the Red Cross.
+    
+    She considers herself a proactive, determined and adventurous individual and says she is inspired by all the love the team members put into everything they do here at SKP.
+    
+    One of her favourite meals is granita with brioche, a classic Sicilian dish often enjoyed in the summer but not limited to!
+- 
+  profile:
+    - file://V61iUjR3Ju4nQ1qm
+  name: 'Badr Al Ameri '
+  subtitle: 'Café Coordinator '
+  bio: |
+    Arriving in Athens in 2018, Badr came from Iraq where he worked as a journalist and professional photographer.  He considers himself a sociable and efficient person and enjoys storytelling, gaming and has a real passion for Real Madrid.
+    
+    His favourite part of working with SKP is that he is involved in providing excellent meals to displaced people, and considers the quality of the cooking some of the best he’s experienced.
+    
+    His favourite meal is Iraqi Dolma; a dish consisting of vegetables stuffed with seasoned rice and veg, cooked in a tomato broth.
+- 
+  profile:
+    - file://DXcp1H4bsW3L5Rjy
+  name: 'Ahmadreza Tohidi '
+  subtitle: 'Café Assistant '
+  bio: |
+    Originally from Iran, Ahmadreza came to Greece in 2021 and formerly worked as a screen printer for a clothing and textile company. Having worked for another organisation before in the Victoria Community Centre Ahmadreza brings his experience and know how to the SKP team, which we are very grateful for!
+    He believes being tidy and organized are some of his greatest strengths and enjoys supporting and serving others at the SKP Café.
+    
+    Adhmadreza’s favourite meal is Chelow Kabab, a delicious, Iranian dish consisting of meat, rice, egg and tomato.
+- 
+  profile:
+    - file://bhIbe1yV6vbMMDJp
+  name: Abdelkader Salman
+  subtitle: Kitchen Assistant and Receptionist
+  bio: |
+    Native to Iraq, Abdelkader came to Athens in early 2023. Back home, he worked as a baker and has certainly brought his finesse and love for food to SKP! He is also a graduate of our 'Advanced Culinary Training' with IEK Delta as he is keen to expand his experience and knowledge in the hospitality industry in Greece. His favourite part of working with us is having the opportunity to provide tasty, fresh meals to individuals who may otherwise go without. His calm demeanor and language skills make him the perfect person to greet users at the welcome desk. Outside of work, Abdelkader enjoys swimming, reading and playing football.
+    
+    His favourite type of meal to cook is going to the local market and experimenting with any new, fresh fish to cook; accompanied with rice or salad.
+
+----
+
+Board:
+
+- 
+  profile:
+    - file://QVo9OIxG4M9Ahuvp
+  name: Jonny Willis
+  bio: |
+    Jonny co-founded Refugee Youth Service in 2016 and sister organisation Velos Youth in 2017. With a background in small business and grassroots NGO leadership, Jonny enjoys the entrepreneurial and operational sides of humanitarian and development work. He joined Saffron Kitchen Project in order to share the lessons learnt and insight developed over the past few years, from working in the grassroots of Greek civil society.
+    
+    Johnny's favourite meal is pumpkin lasagne, especially when smoked cheese is involved!
+- 
+  profile:
+    - file://vIAlxaAgo9DX94iy
+  name: Fausta Eskenazi
+  bio: |
+    She is an art dealer with many years of experience in charity work in different places from India, Afghanistan to Tibet as well as Europe. Fausta's knowledge covers fundraising and strategy, and she brings with her a lot of creativity.
+    Having seen first hand in camps in Greece how food is essential to people’s wellbeing in dire situations she strongly believes in the importance of SKP’s role in the refugee context.
+    
+    Her favourite meal is Risotto alla Milanese, soft, creamy, soothing and comforting, shining with the happiest of colours, yellow saffron!
+- 
+  profile:
+    - file://zVrYKRBaoEZd1zb7
+  name: Katina Saoulli
+  bio: |
+    Katina’s professional experience includes a degree in law, working in media and advertising, running NGOs within the Greek context and being slightly obsessed with Excel.
+    Her eagerness to be part of the Saffron Kitchen Project stems from her belief that it provides both an immediate solution by providing nurturing meals and in the longer term enables people to develop real skills with genuine job and integration opportunities. It is to her a perfect example of an organisation supporting the community to organically grow (no pun intended).
+    
+    Katina’s favourite meal is most things cooked by her mother!
+- 
+  profile:
+    - file://nI0JiVMTu0nAKkhW
+  name: Gabi Herberstein
+  bio: |
+    She is a co-founder of the Greek/Austrian organisation Echo100Plus. Having had the experience of setting up an NGO herself, Gabi believes she can contribute with her realistic outlook, attention to detail and familiarity of working within Greece.
+    Gabi trusts in the Saffron Kitchen Project's ability to bring people together through cooking and opportunity with a long-lasting effect.
+    
+    Her favourite meal is aubergine imam bayildi, it’s seasonal food at it’s best!
+
+----
+
+Partners:
+
+- 
+  profile:
+    - file://qJCvP2xrQOfLm2Lr
+  link: https://www.ankaaproject.org
+- 
+  profile:
+    - file://KSIVqur615F7EJGm
+  link: https://www.thepandoraproject.co.uk
+- 
+  profile:
+    - file://3M475nEMq4WtJtJL
+  link: https://www.echo100plus.com/en
+- 
+  profile:
+    - file://pWvUZz60NF9Xdzmm
+  link: https://velosyouth.org/
+- 
+  profile:
+    - file://HTpgHxmHEk4NgEIb
+  link: https://steps.org.gr/en/
+- 
+  profile:
+    - file://jOrCCxmdBuQscHz3
+  link: http://lovewithoutborders4refugees.com/
+- 
+  profile:
+    - file://YfFcsqQVZB4AZKAg
+  link: https://www.solidaritynow.org/en/
+- 
+  profile:
+    - file://dNZdjnK8IymyQ7L0
+  link: https://afw.ngo/
+- 
+  profile:
+    - file://GNxEDqcrqreKvgse
+  link: https://www.gcr.gr/el/
+- 
+  profile:
+    - file://6bdWp6KnOTTSKEvZ
+  link: http://intechgration.io
+- 
+  profile:
+    - file://C6xR0kCqE9b0cKAX
+  link: https://www.lighthouserelief.org/
+- 
+  profile:
+    - file://W73kLMdzkeHEb5Dj
+  link: https://melissanetwork.org/
+- 
+  profile:
+    - file://FuWCu8UyeQ4NB7eH
+  link: https://ohf-lesvos.org/en/welcome/
+- 
+  profile:
+    - file://m7Jg9JkPCDLIVOVW
+  link: https://www.foodkind.org/
+- 
+  profile:
+    - file://N9rwMcnATjXgJHj3
+  link: https://www.refugeebiriyanibananas.org/
+- 
+  profile:
+    - file://f8LotA9hegPcd91q
+  link: http://yogasportwithrefugees.org/
+- 
+  profile:
+    - file://qRFwSbLkvTJ93htF
+  link: https://mazihousingproject.org/
+- 
+  profile:
+    - file://xly69WH8BLTSRyb0
+  link: https://glocalroots.org/en/
+- 
+  profile:
+    - file://CxEdEmKa8XeElIkd
+  link: https://www.christianrefugeerelief.com/
+
+----
+
+Uuid: FR1D7UTrgGc1FJMF

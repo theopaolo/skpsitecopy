@@ -1,0 +1,33 @@
+Title: Mamadou #cookingwithrefugees at To Lokali!
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["file:\/\/UCmarHBzL9ZxPkfQ"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"ca316a38-0d99-4b31-a369-573ba2be4e1b","isHidden":false,"type":"image"},{"content":{"text":"<p>Our brilliantly talented Sous Chef Mamadou took <a href=\"https:\/\/www.instagram.com\/explore\/tags\/cookingwithrefugees\/\" rel=\"noopener noreferrer\">#cookingwithrefugees<\/a> by storm and cooked up a feast at the fabulous To Lokali restaurant in Psyri for one night.<br><br>Mamadou showcased the brilliant flavours of Guinean food, crafting a menu with chef Alexandros Charalabopoulos.<br><br>The whole SKP team, volunteers and lucky restaurant goers were treated to a menu of fried plantain with a creamy avocado sauce, the freshest of ceviches, and the most deliciously charred chicken yassa, amongst other delightful dishes! <br><br>We are so happy that one of our chefs once again is part of such a fantastic initiative organised by the UNHCR Greece. And of course, bravo to Mamadou for stepping up to the challenge and passing with flying colours!!<\/p><p><\/p><p><\/p>"},"id":"1151b7c1-9802-4a40-a764-266b0ce9efb3","isHidden":false,"type":"text"},{"content":{"images":["file:\/\/E4uljE7sbElMySQ6","file:\/\/FY7q9swd2SQgxsvg","file:\/\/ofJYeeezxM2Dll6B","file:\/\/G1807ucxV9IpsjyZ","file:\/\/GGHhLgSsrlmXjRUx","file:\/\/kzaZZlqm1lSRWHC9","file:\/\/MISLk0G4xO0aHlSP","file:\/\/uZwQMLwBz2bC2Jyy"],"caption":"","ratio":"","crop":"false"},"id":"1d64b40f-2f27-4d17-95ab-a6b5399c976b","isHidden":false,"type":"gallery"}]
+
+----
+
+Published: 2024-06-21
+
+----
+
+Cover: - file://h7Xd25hJTrj54eo8
+
+----
+
+Author: - user://9Qv24DwA
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: J0JmwYUzkCsuuxkY

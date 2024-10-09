@@ -1,0 +1,33 @@
+Title: Fionnuala's Ice Cream Profiteroles
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["file:\/\/tqTtU5idvAco9FtX"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"52397c96-481a-4598-81a5-36fdefe35d79","isHidden":false,"type":"image"},{"content":{"text":"<p>This decadent celebration recipe was shared by our volunteer Fionnuala.<\/p><p>\"This was a classic family party dessert when I was growing up. We loved ice cream in my house (and still do) and adding the choux pastry and chocolate sauce was a great way to make it that bit extra special. For me, it\u2019s a million times better than profiteroles with cream, but it won\u2019t last as long. What a great excuse to eat your fill...\"<\/p>"},"id":"d4129aa8-2e44-4906-ae6a-a18f77cc6598","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/H6NPxdN4cSroSokv"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"9a14c49b-3d38-4732-a2b9-026cf80eb110","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>Ingredients for 4-6 people:<\/strong><\/p><p>Choux Pastry:<\/p><p>65g plain flour<\/p><p>50g butter<\/p><p>150ml water<\/p><p>2 eggs, lightly beaten<\/p><p>\u00a0<\/p><p>Chocolate sauce:<\/p><p>125g plain chocolate<\/p><p>15g butter<\/p><p>30ml golden syrup<\/p><p>2-3 drops vanilla essence<\/p><p>\u00a0<\/p><p>To finish:<\/p><p>Ice cream of your choice<\/p><p>Icing sugar, for dusting (optional)<\/p><p><\/p>"},"id":"18fe4f8e-c933-4431-9824-ee89efd8fb0e","isHidden":false,"type":"text"},{"content":{"text":"<p><strong>Method:<\/strong><\/p><p>Choux pastry:<\/p><p>Preheat the oven to 220\u2103.<\/p><p>Put the butter and 150ml water in a saucepan. Heat gently until the butter has melted and then bring to the boil. Remove the pan from the heat and immediately add the flour, beating thoroughly with a wooden spoon.<\/p><p>Continue beating over a low heat until the mixture forms a smooth ball in the centre of the pan, then remove from the heat and cool for 1-2 minutes. Then beat in the eggs, a little at a time, adding just enough to give a piping consistency. It is important to beat vigorously at this stage to incorporate as much air as possible!<\/p><p>Put the mixture in a piping bag with a 1cm nozzle. Pipe 20 small bun shapes onto 2 dampened baking sheets. Alternatively you can simply spoon the mixture out.<\/p><p>Bake for 20-25 minutes at 220\u2103 until golden brown and well risen. Reduce the oven temperature to 180\u2103. Make a small hole in the side of each bun and return to the oven for 5mins to dry out completely. Leave to cool on a wire rack.<\/p><p>\u00a0<\/p><p>Chocolate sauce:<\/p><p>Melt the chocolate, butter, golden syrup and vanilla essence with 30ml (2tbsp) water in a small saucepan over a very low heat. Stir until smooth and well blended.<\/p><p>\u00a0<\/p><p>To Finish:<\/p><p>Once the choux buns have cooled, slice them in half, fill with a generous scoop of ice cream and lightly dust with icing sugar (optional). Work quickly or your ice cream will start to melt! Pile your filled choux buns into a pyramid on a serving plate and then drizzle with half the chocolate sauce. Once finished, this makes an impressive display, but your masterpiece won\u2019t last long! Serve immediately in individual portions and enjoy with an extra chocolate sauce spooned over. You can also add a selection of extra toppings like chopped hazelnuts or pistachios.<\/p><p><\/p>"},"id":"ce5a4937-e8ff-4836-9f4c-67b39737b847","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/tqTtU5idvAco9FtX"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"d9ecbbed-6b8f-4cbf-8d92-16d28356b9a1","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2022-11-22
+
+----
+
+Cover: - file://w64YWHV7loZrmejf
+
+----
+
+Author: - user://Rrjt8awb
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: oZNLXKqPMYADd6kI

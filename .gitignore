@@ -1,0 +1,5 @@
+node_modules
+media
+assets/dist/css
+assets/dist/js/**.js
+!assets/dist/js/main.js

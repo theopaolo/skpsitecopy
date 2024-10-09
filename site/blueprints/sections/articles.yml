@@ -1,0 +1,6 @@
+type: pages
+headline: Articles
+info: "{{ page.published.toDate('d.m.Y') }}, Feat = {{ page.featured }}"
+template: publication
+empty: No articles yet
+sortBy: date desc

@@ -1,0 +1,33 @@
+Title: HAPPY 2nd BIRTHDAY SKP!
+
+----
+
+Maincontent: [{"content":{"text":"<p>Here\u2019s to many more years and many more meals! \ud83e\ude77<br><br>A big THANK YOU to our superb team of employees and volunteers, who put so much love and hard work into everything that they do. <\/p><p>Thank you to our funders and everyone else who has made donations, without this vital support we wouldn\u2019t be able to do what we love and provide our much needed services throughout Athens! <\/p><p><\/p>"},"id":"c2bf1c73-febc-443c-9741-efbaa94e3924","isHidden":false,"type":"text"},{"content":{"images":["file:\/\/heCmLJeEgmNxekFN","file:\/\/QhmWARPX5ig1kvBh","file:\/\/ydqSpDN0bxXDa1Js"],"caption":"","ratio":"","crop":"false"},"id":"ad7d91da-6308-4fae-8544-7a5059ac1721","isHidden":false,"type":"gallery"}]
+
+----
+
+Published: 2024-04-04
+
+----
+
+Cover: - file://14AVo7wqnraOCqZb
+
+----
+
+Author: - user://9Qv24DwA
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: 6IZcJvcoM6xzF7VQ

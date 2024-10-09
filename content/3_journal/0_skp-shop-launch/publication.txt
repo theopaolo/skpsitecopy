@@ -1,0 +1,33 @@
+Title: SKP Shop Launch
+
+----
+
+Maincontent: [{"content":{"text":"<p>We are excited to announce that our shop is now live! Featuring products made with 100% Greek cotton that have been handmade here in Athens. <\/p><p>Our partners at ANKAA Project handmade these beautiful aprons and tote bags in our shared centre in Kypseli, Athens. Their tailors made them with Greek cotton locally sourced from a family business. <\/p><p>The products were then screen printed by Lalava Workshop with our lovely logo and we are so happy with the results. <\/p><p>They make the perfect guift for any occassion with a great cause behind them. <\/p><p>All the money raised through the items goes towards our organisations work... Click on the link below and happy shopping! <\/p><p><a href=\"https:\/\/saffronkitchenproject.bigcartel.com\/\" rel=\"noopener noreferrer\">https:\/\/saffronkitchenproject.bigcartel.com\/<\/a><\/p>"},"id":"06a3f2d5-2788-42f6-84a4-ec2e250066dd","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/ePwGHgBUcPh4LU0t"],"src":"","alt":"","caption":"","link":"","ratio":"7\/5","crop":"false"},"id":"fda3499b-d6f2-46b9-af24-21ad49258c65","isHidden":false,"type":"image"},{"content":{"location":"kirby","image":["file:\/\/mFUPXQMl7bP1Kdjs"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"725e6e51-368e-4b25-a125-6ee0721b4b21","isHidden":false,"type":"image"},{"content":{"location":"kirby","image":["file:\/\/gtBA9naZQRmh2Uzo"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"d26aee17-9a70-4b21-870a-ba5ee57e2974","isHidden":false,"type":"image"},{"content":{"location":"kirby","image":["file:\/\/AeCA0rBeyItPu3be"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"763d97cc-c6e2-43f1-adb4-e7184f16da9d","isHidden":false,"type":"image"},{"content":{"location":"kirby","image":["file:\/\/OSTsZUNfem7dUglF"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"70464f41-4101-4f73-a65b-68be430e29ae","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2022-11-29
+
+----
+
+Cover: - file://srGdaL0Av11RPgyM
+
+----
+
+Author: 
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: GyxtCXTWMutGYIs2

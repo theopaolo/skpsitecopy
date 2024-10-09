@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /panel/
+Disallow: /error/
+Disallow: /site/
+Disallow: /assets/
+Disallow: /kirby/
+
+Sitemap: https://www.saffronkitchenproject.org/sitemap.xml

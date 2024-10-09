@@ -1,0 +1,33 @@
+Title: Summer Newsletter 2024
+
+----
+
+Maincontent: [{"content":{"text":"<p>Dear Friends,<\/p><p><\/p><p>What a year we\u2019ve had so far\u2026 here are some of our favourite highlights:\u00a0<\/p><p><strong><u>New Caf\u00e9<\/u><\/strong><\/p><p>In April we opened the doors to our new SKP community cafe, a safe space where vulnerable people can come together, enjoy a hot drink and eat one of our meals. Taking over the caf\u00e9 in the Victoria Community Centre has not only allowed us to share more of our lovingly made food (3000 meals so far) - it has also created two new full time job opportunities covered by members of the refugee community Badr and Ahmed who\u00a0have been instrumental to the successful running of the Cafe.<\/p><p><strong><u>Our 2nd Birthday + 100.000 meals milestone<\/u><\/strong><br><br>In April we also celebrated our second birthday while just two months before that, in February we reached a staggering 100.000 meals distributed throughout Athens. We celebrated these two momentous occasions with delicious cake and made a promise for many more birthdays (and delicious meals) to come!<\/p><p><strong><u>Mama Sammy\u2019s Kitchen<\/u><\/strong><\/p><p>We are thrilled to share that Chioma, a graduate of our culinary training program with IEK Delta, has successfully opened her own restaurant, Mama Sammy's Kitchen! Despite facing numerous challenges, Chioma's passion for cooking and our support in helping her win a grant turned her dream into reality. Her restaurant showcases the rich flavors of her home, West Africa, and Chioma prepares all the delicious dishes herself. We're incredibly proud of her achievement and look forward to helping more graduates realize their dreams in the future.<\/p><p><strong><u>Meals\u00a0<\/u><\/strong><br><br>Our take away meals have proved to be a crucial initiative ensuring that even those who aren\u2019t registered in other organizations can still receive much needed meals straight from our doors! So far we have offered 6235 meals to take away with July being the busiest month with 1110 meals getting picked up from our kitchen by individuals and families in need. Since January we have cooked 46872 meals in total, with our busiest month cooking a whopping total of 9604!<\/p><p><strong><u>Mamadou at\u00a0 #cookingwithrefugees festival<\/u><\/strong><\/p><p>In June, our incredibly talented Sous Chef,<u><a href=\"https:\/\/www.instagram.com\/mdou_diallo11\/\" rel=\"noopener noreferrer\">\u00a0<\/a><\/u>Mamadou, took part in the \u201cCooking with refugees\u201d festival by UNHCR and cooked up a feast at a local restaurant in the center of Athens. Mamadou crafted a one time menu in collaboration with the chef of the restaurant showcasing the brilliant flavors of Guinea that were received with much delight. Naturally, the whole SKP family - and extended family - was there to support him, taste his wonderful dishes and embarrass him with our loud cheer! It is important for us to highlight that Mamadou first came to SKP through the training and worked his way up to sous chef. We are so incredibly proud of his growth and everything he has achieved.\u00a0<\/p><p><strong><u>Advanced training<\/u><\/strong><\/p><p>This year, we had 45 individuals graduate from our vocational training program with IEK Delta. In February, we launched a pilot Advanced Culinary Arts course for those who had either completed one of our previous courses or have prior experience in the field. This three-month program was highly successful; many of our students found employment in restaurants and hotels across Greece, thanks to our training and employability initiative. One of the graduates has even joined the SKP team as our new Kitchen Assistant.\u00a0<\/p><p>We continue to stay committed to our mission of ensuring that everyone has access to quality food. We hope for a more peaceful future, one where human rights and freedoms are upheld and honoured for all individuals. Together, we can keep striving to make a positive difference and create a better future for everyone. Your contributions have been vital in helping us reach many of our objectives and carry on our mission, and for that, we are deeply grateful.<\/p><p>With love and solidarity,<\/p><p>Evelina and the SKP Team<\/p><p><\/p>"},"id":"1ca903bb-83bd-4daa-bb0a-9bfe8df365c4","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/IxcUUpg3Dsw1orm4"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"b981d660-0e34-4942-bbd9-00d4e0550460","isHidden":false,"type":"image"},{"content":{"images":["file:\/\/5JDCj39HCl8HuSOo","file:\/\/sHHUnWgo8qbYn5CH","file:\/\/EXLisvqNrS9qbz6h","file:\/\/DrxXL4lgcJEdqnSH","file:\/\/t86jM5jKlAqApbOZ","file:\/\/WQ72v1kkQTitaBxa"],"caption":"","ratio":"","crop":"false"},"id":"9517fa13-1c82-46dc-9f98-bfc8a59b536f","isHidden":false,"type":"gallery"},{"content":{"images":["file:\/\/uzbAhhUvWKQ2zm20"],"caption":"","ratio":"","crop":"false"},"id":"b3ddc74c-ff66-4104-a327-6b5d97cea175","isHidden":false,"type":"gallery"}]
+
+----
+
+Published: 2024-07-31
+
+----
+
+Cover: - file://rsB0JjACODYvYBuJ
+
+----
+
+Author: - user://9Qv24DwA
+
+----
+
+Featured: true
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: TB4io1fK7zvjrFQY

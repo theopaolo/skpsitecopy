@@ -1,0 +1,33 @@
+Title: SKP - Our Mission
+
+----
+
+Maincontent: [{"content":{"text":"<p>Check out our team in action!<\/p>"},"id":"6b7d8700-6bb3-4118-8ea0-45dc4863a4de","isHidden":false,"type":"text"},{"content":{"url":"https:\/\/www.youtube.com\/watch?v=-gw71qGAGUw&ab_channel=SaffronKitchenProject","caption":"Check out our team in action in this video showcasing our mission!"},"id":"1a68a11c-2ec6-473f-9517-204ef2829668","isHidden":false,"type":"video"}]
+
+----
+
+Published: 2023-05-22
+
+----
+
+Cover: - file://SREJni1gBWBeUlgM
+
+----
+
+Author: - user://9Qv24DwA
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: 21leXNJtir68vur6

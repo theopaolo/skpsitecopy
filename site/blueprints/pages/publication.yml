@@ -1,0 +1,58 @@
+title: Publication
+icon: 📝
+num: '{{ page.created.toDate("Ymd") }}'
+
+tabs:
+  content:
+    label: Content
+    columns:
+      - width: 2/3
+        sections:
+        fields:
+          maincontent:
+            label: Content
+            type: blocks
+            fieldsets:
+              - heading
+              - text
+              - list
+              - image
+              - gallery
+              - video
+              - code
+              - quote
+      - width: 1/3
+        sticky: true
+        sections:
+        fields:
+          published:
+            label: Date
+            type: date
+            width: 1/2
+          cover:
+            label: Cover
+            type: files
+            multiple: false
+            query: page.images
+          author:
+            label: Author
+            type: users
+            width: 1/2
+          featured:
+            label: Featured
+            type: toggle
+            text: 
+              - "no"
+              - "yes"
+          jobopen:
+            label: Job openning
+            type: toggle
+            text: 
+              - "no"
+              - "yes"
+          excerpt:
+            label: Excerpt
+            type: text
+  files:
+    label: Files
+    preset: files

@@ -1,0 +1,5 @@
+Uuid: srGdaL0Av11RPgyM
+
+----
+
+Template: blocks/image

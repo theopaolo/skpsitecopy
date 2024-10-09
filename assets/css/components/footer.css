@@ -1,0 +1,109 @@
+/* components/footer.css */
+
+footer {
+    margin-top: auto;
+    padding: 5rem 2rem;
+    font-size: 0.8rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+footer span {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 0.8rem;
+}
+
+footer div a,
+footer ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+footer .signature {
+    margin: 2rem 0;
+}
+
+footer .signature svg {
+    height: 30px;
+    width: auto;
+    margin: 0px 12px;
+}
+
+footer .btnapply {
+    font-family: var(--font-woodland);
+    background-color: var(--color-green);
+    color: var(--color-yellow);
+    font-size: 1.225rem;
+    width: 176px;
+    height: 176px;
+    margin: 0 auto;
+}
+
+footer ::placeholder {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.85rem;
+}
+
+footer form div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer form ul li {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+footer form button {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: unset;
+    background-color: var(--color-yellow);
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+}
+
+footer form button:hover {
+    background-color: var(--color-green);
+    color: var(--color-yellow);
+    cursor: pointer;
+}
+
+footer label {
+    font-family: var(--font-silka-bold);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+footer input {
+    height: 2rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+footer input[type="submit"],
+footer #mc-embedded-subscribe {
+    font-size: 0.85rem;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: unset;
+    background-color: var(--color-yellow);
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+}
+
+footer input[type="submit"]:hover,
+footer #mc-embedded-subscribe:hover {
+    background-color: var(--color-green);
+    color: var(--color-yellow);
+    cursor: pointer;
+}

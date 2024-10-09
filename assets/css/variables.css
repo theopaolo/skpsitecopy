@@ -1,0 +1,13 @@
+:root {
+    --color-green: #07453a;
+    --color-yellow: #ffe019;
+    --color-orange: #ff8000;
+    --color-pink: #e5194c;
+    --color-white: #ffffff;
+
+    --font-silka: "silkaregular", sans-serif;
+    --font-silka-bold: "silkabold", sans-serif;
+    --font-woodland: "ppwoodland", serif;
+
+    --transition-default: all 0.3s ease-in-out;
+  }

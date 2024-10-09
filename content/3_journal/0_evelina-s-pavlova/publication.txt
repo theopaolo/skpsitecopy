@@ -1,0 +1,33 @@
+Title: Evelina's Pavlova
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["file:\/\/9sd6KCTqAq7VBtbx"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"52397c96-481a-4598-81a5-36fdefe35d79","isHidden":false,"type":"image"},{"content":{"text":"<p>This delectable dessert was shared by SKP Founder Evelina.<\/p><p>\"My mother loves any form of dessert that includes cream. When I first learned how to make pavlova I thought this was for sure going to be a favourite of hers. I was correct. And as it turns out it\u2019s a complete crowd pleaser and often gets a lot of \u2018aahhhs' and \u2018wows' when I serve it to my friends and family. I don\u2019t follow a traditional recipe of pavlova as I find making a classic meringue works just as well and needs less ingredients. It\u2019s one of those dishes that sparks joy and is a delight to look at. At the end of the day, sugar and cream\u2026 what\u2019s not to love, even my diabetic father can't resist!\"<\/p>"},"id":"d4129aa8-2e44-4906-ae6a-a18f77cc6598","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/hzU1UFtZfy30IKgu"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"9a14c49b-3d38-4732-a2b9-026cf80eb110","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>Ingredients for 15 people:<\/strong><\/p><p>6 Egg whites\u00a0<\/p><p>350g Caster sugar<br><\/p><p>350ml Double cream\u00a0<\/p><p>3 tbsp Icing sugar<\/p><p>500g Strawberries<\/p><p>150g Blueberries\u00a0<\/p><p>150g Raspberries\u00a0<\/p><p>150g Blackberries\u00a0<\/p>"},"id":"18fe4f8e-c933-4431-9824-ee89efd8fb0e","isHidden":false,"type":"text"},{"content":{"text":"<p><strong>Method:<\/strong><\/p><p>Preheat the fan oven to 130\u2103.<\/p><p>With an electric whisk start beating the egg whites until they reach stiff peaks.\u00a0<\/p><p>Gradually add in the caster sugar. My trick is to add one tablespoon of sugar per egg, always bringing it to stiff peaks in-between spoonfuls. I find counting to 10 Mississippis usually times perfectly with stiff peaks. Once you have gradually added in the 6 tablespoons then pour in all the remaining sugar and whisk again to stiff peaks.\u00a0<\/p><p>The meringue should look white, glossy and if you flip the bowl over your head nothing should come down.\u00a0<\/p><p>Spread the meringue mixture in whatever shape you like onto some parchment paper that has been placed on an oven dish. Making sure that the sides are slightly higher than the middle.\u00a0<\/p><p>Cook for roughly one hour, so that it is dry to the touch and then turn off the oven and let the meringue cool in there.<\/p><p>For the topping you can put whatever fruit is in season, I usually like to use a contrast of colours and scatter it with edible flowers or if I\u2019m feeling extra fancy for a special occasion I might even add gold leaf or pistachios.\u00a0<\/p><p>Whip the cream with the icing sugar and top the whole meringue with it.\u00a0Remember not to put the filling on top too early so as to not make it go too soggy.\u00a0Cover with your preferred fruits, in this case I went with a fruits of the forest and some sprigs of mint.\u00a0<\/p><p>Serve to your I\u2019m sure delighted guests and enjoy!\u00a0<\/p>"},"id":"ce5a4937-e8ff-4836-9f4c-67b39737b847","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/9sd6KCTqAq7VBtbx"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"d9ecbbed-6b8f-4cbf-8d92-16d28356b9a1","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2022-11-22
+
+----
+
+Cover: - file://hzU1UFtZfy30IKgu
+
+----
+
+Author: - user://Rrjt8awb
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: h6H2F8H9aNgLDgIl

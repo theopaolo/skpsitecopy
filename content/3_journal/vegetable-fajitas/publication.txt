@@ -1,0 +1,33 @@
+Title: Vegetable Fajitas
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["file:\/\/3uh2BjY9AosTuuMM"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"52397c96-481a-4598-81a5-36fdefe35d79","isHidden":false,"type":"image"},{"content":{"text":"<p>A true favourite of the SKP kitchen, it\u2019s packed with so many flavours and textures that even the biggest carnivore would be happy to get tucked in. This dish is perfect for a party, for sharing and for getting your hands a little messy\u2026<\/p>"},"id":"d4129aa8-2e44-4906-ae6a-a18f77cc6598","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/iTy3E75NYbXQrNuV"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"d9ecbbed-6b8f-4cbf-8d92-16d28356b9a1","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>Ingredients for 6 people:<\/strong><\/p><p><\/p><p><strong>For the salsa:<\/strong><\/p><p>600g of white onions sliced\u00a0<\/p><p>450g tomato passata or chopped tomatoes\u00a0<\/p><p>3 tbsp olive oil\u00a0<\/p><p>1 tsp sugar\u00a0<\/p><p>1 tsp of cayenne or chilli flakes\u00a0<\/p><p><\/p><p><strong>For the main mix:<\/strong><\/p><p>700g red peppers in strips<\/p><p>200g green peppers in strips<\/p><p>700g mushrooms\u00a0<\/p><p>2 garlic cloves<\/p><p>SKP Fajita Spice Blend:<\/p><p>1 tsp chilli powder<\/p><p>1 tbsp cumin\u00a0<\/p><p>2 tbsp smoked paprika\u00a0<\/p><p>1 tbsp ground coriander\u00a0<\/p><p>2 tbsp dried oregano\u00a0<br><\/p><p><\/p><p><strong>For the extra trimmings....<\/strong><\/p><p><strong>The Slaw:<\/strong><\/p><p>450g thinly sliced red cabbage\u00a0\u00a0<\/p><p>Small bunch of spring onions\u00a0<\/p><p>2 tbsp red wine vinegar\u00a0<\/p><p>Salt and pepper\u00a0<\/p><p><\/p><p><strong>The Yoghurt:<\/strong><\/p><p>350g yoghurt\u00a0<\/p><p>Juice and zest of one lime or lemon\u00a0<\/p><p><\/p><p><strong>And don't forget...<\/strong><\/p><p>Grated cheese for sprinkling\u00a0<\/p><p>Tortillas<\/p><p><\/p><p><strong>For home-made pickled onion <\/strong>(We recommend preparing the day before!):<\/p><p>2 red onions<\/p><p>300ml red wine vinegar\u00a0<\/p><p>1 tsp mustard seeds\u00a0<\/p><p>2 bay leaves\u00a0<\/p><p>3 tsp salt<\/p><p>3 tsp sugar<\/p><p><\/p><p><\/p>"},"id":"18fe4f8e-c933-4431-9824-ee89efd8fb0e","isHidden":false,"type":"text"},{"content":{"text":"<p><\/p><p><strong>Method:<\/strong><\/p><p><strong>For the pickled onion (optional):<\/strong><\/p><p>If you have time and wish to make the pickled onions we recommend doing them<strong> the day before<\/strong> for maximum flavour, but they should be pickled within an hour and ready to use. Thinly slice your onions, put them in a bowl and add the red wine vinegar, the mustard seeds, bay leaf, salt and sugar and then cover with boiling water until all the onions are covered. Check the mixture to ensure there is a balance of sweet\/salt and acid, adjust accordingly to meet your tastes with extra sugar or vinegar. Let it cool in a sealed container and store in the fridge.\u00a0<br><\/p><p><strong>For the Salsa:<\/strong><\/p><p>Start by slicing up your onions and cook them down in a pot with a tablespoon of oil. Add a teaspoon of sugar and a teaspoon of your cayenne or chilli flakes and cook until softened. Once tender, add the passata (crushed tomatoes can also be used) and cook on a low heat while you prepare the rest of your components. You don't want the sauce to thicken too much, so add water if necessary and season with salt and pepper to taste.\u00a0\u00a0<\/p><p><\/p><p><strong>For the Main Mix:<\/strong><\/p><p>While the salsa mix is cooking, slice the peppers and mushrooms, making sure they are similar sizes to ensure an even cook throughout. Season them with your SKP Fajita Spice Blend, two cloves of garlic and a couple of tablespoons of olive oil. Roast in the oven at 180\u00b0C for a good 20-30 minutes.\u00a0<\/p><p><\/p><p><strong>For the extra trimmings\u2026<\/strong>\u00a0<\/p><p>Thinly slice the red cabbage and season with red wine vinegar and salt and set aside.\u00a0<\/p><p>Then zest and juice the lime into your yoghurt and mix well.<\/p><p><br><\/p><p>Once the oven vegetables are ready you should be good to go\u2026 the rest is really up to you. There is no order to how you should eat this, some people start with a base of salsa and work their way up. At the SKP kitchen we tend to go hot ingredients at the bottom followed by the cabbage, yoghurt, cheese and finally our homemade pickled onions (optional).\u00a0<br><\/p><p>Our word of advice, have a lot of napkins at the ready, it gets messy\u2026 but then again isn\u2019t that half the fun of fajitas?<\/p><p><br><\/p>"},"id":"ce5a4937-e8ff-4836-9f4c-67b39737b847","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/3uh2BjY9AosTuuMM"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"0c32aef1-935c-4376-ab74-7ae04963484b","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2023-05-19
+
+----
+
+Cover: - file://iTy3E75NYbXQrNuV
+
+----
+
+Author: - user://Rrjt8awb
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: 5QQeOE21JYuipXBA

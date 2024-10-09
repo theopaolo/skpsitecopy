@@ -1,0 +1,5 @@
+Uuid: BNVGjDoGTog25Ypo
+
+----
+
+Template: blocks/image

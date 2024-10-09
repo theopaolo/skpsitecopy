@@ -1,0 +1,33 @@
+Title: Lotti's Sixpenny Pudding with Butterscotch Sauce
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["file:\/\/SlpLZsva8z1DHbX4"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"5bb85b64-7449-4c77-89f2-f1333c2a15ee","isHidden":false,"type":"image"},{"content":{"text":"<p>Our next and final festive recipe is from volunteer Lotti, and is a variation on the traditional Scottish Clootie Dumpling. Don't forget add a few silver coins or other trinkets (wrapped in greaseproof paper of course) to bring luck to whoever finds them!<\/p>"},"id":"d4129aa8-2e44-4906-ae6a-a18f77cc6598","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/5eNpC0eZhJPNHnhY"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"9a14c49b-3d38-4732-a2b9-026cf80eb110","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>Ingredients for 6-8 people:<\/strong><\/p><p><\/p><p>For the Pudding:<\/p><p>150g currants<\/p><p>150g sultanas<\/p><p>140g self-raising flour, sifted<\/p><p>110g suet (vegetarian or beef)<\/p><p>75g fresh wholemeal breadcrumbs<\/p><p>175g light muscovado sugar<\/p><p>225ml milk<\/p><p>1 medium egg<\/p><p>1tsp ground ginger<\/p><p>1 tsp mixed spice<\/p><p>Silver coins, double wrapped in greaseproof paper<\/p><p>\u00a0<\/p><p>For the Butterscotch Sauce:<\/p><p>75g light muscovado sugar<\/p><p>50g butter<\/p><p>150ml double cream<\/p><p>1tsp vanilla extract<\/p><p>\u00a0<\/p><p>To Serve:<\/p><p>Cr\u00e8me Fra\u00efche<\/p><p><\/p>"},"id":"18fe4f8e-c933-4431-9824-ee89efd8fb0e","isHidden":false,"type":"text"},{"content":{"text":"<p><\/p><p><strong>Method:<\/strong>\u00a0<\/p><p>For the Pudding:<\/p><p>Mix the currants, sultanas, flour, suet, breadcrumbs, sugar, ginger and mixed spice. Beat together the milk and eggs, then slowly add them to the dry mix. Stir well to combine then gently stir in the coins.<\/p><p>Spoon into a lightly battered 1.2 litre pudding bowl, making sure the coins are evenly distributed.<\/p><p>Cover with a double layer of buttered foil secured with string and with a pleat across the centre. Place in a steamer or large saucepan of simmering water and steam for 2\u00bd -3 hours. While it\u2019s cooking, check the water level every half hour and top up with boiling water if necessary!<\/p><p>\u00a0<\/p><p>For the Butterscotch Sauce:<\/p><p>Place everything in a small saucepan and heat slowly to dissolve the sugar, then boil for 2-3 minutes until thick and creamy!<\/p><p>\u00a0<\/p><p>To Serve:<\/p><p>Turn out the pudding on to an overproof dish and pour over the butterscotch sauce. Place in an oven preheated to 200\u2103 for 3-4minutes until piping hot and bubbling. Serve at once with a dollop of cr\u00e8me fra\u00efche.<\/p>"},"id":"ce5a4937-e8ff-4836-9f4c-67b39737b847","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/SlpLZsva8z1DHbX4"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"137696c7-c58b-4527-9638-26b59b503d2a","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2022-12-15
+
+----
+
+Cover: - file://5eNpC0eZhJPNHnhY
+
+----
+
+Author: - user://Rrjt8awb
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: vCZED3IbkoWOvCU2

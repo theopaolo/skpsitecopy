@@ -1,0 +1,33 @@
+Title: Adel's Shish Barak
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["file:\/\/3uh2BjY9AosTuuMM"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"52397c96-481a-4598-81a5-36fdefe35d79","isHidden":false,"type":"image"},{"content":{"text":"<p>This Middle Eastern comfort food is a favourite of Head Chef Adel and is a treat for all!<\/p><p>\u201cI love this dish, it can be served both hot and cold and it is considered a very good meal that we offer to friends and family on holidays\u00a0and\u00a0special occasions.\u201d<\/p><p>The most time consuming part is making and shaping each individual dumpling, but it\u2019s worth it in the end. We recommend making them with friends and family to make the meal feel even more special...<\/p>"},"id":"d4129aa8-2e44-4906-ae6a-a18f77cc6598","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/VTribUL8yk59ZKtN"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"d9ecbbed-6b8f-4cbf-8d92-16d28356b9a1","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>Ingredients for 4-6 people:<\/strong><\/p><p>2 tsp salt<\/p><p>120ml whole milk<\/p><p>500g minced meat (you can use beef, lamb or a mixture of both)\u00a0<\/p><p>110g butter<\/p><p>200g All Purpose Flour<\/p><p>1 medium onion, chopped<\/p><p>Half a teaspoon of mixed spices<\/p><p>1l \u00a0yoghurt<\/p><p>30g chopped coriander (optional)<\/p><p>1 large egg, beaten<\/p><p>2tbsp cornflour<\/p><p>1 clove of garlic, crushed<\/p><p>200g chopped parsley.\u00a0<\/p><p>120ml\u00a0water<\/p><p><\/p><p><\/p>"},"id":"18fe4f8e-c933-4431-9824-ee89efd8fb0e","isHidden":false,"type":"text"},{"content":{"text":"<p><strong>Method:<\/strong><\/p><p><strong>For the Dough<\/strong><\/p><p>Sift the flour with a quarter of a teaspoon of salt. Add the milk, stirring well, then add the water, a little at a time, while continuing to mix.<\/p><p>Knead the mixture for two to three minutes to get a smooth dough, then wrap it and leave it to rest for about an hour.\u00a0<\/p><p><\/p><p><strong>Making the Dumpling and Sauce<\/strong><\/p><p>Heat the oven at 200\u2103<\/p><p>Put half the butter in a saucepan over a medium heat, then add the mince and stir until nicely browned. Add the onions and the mixed spices and cook for about three minutes, then remove the ingredients from the heat and add the chopped parsley.\u00a0<\/p><p>Roll out the dough and cut it into circles. Place around a teaspoon of filling in the middle of the circle. Fold and pinch at the sides to close, then bend to get a cap shape, pinching the ends together.<\/p><p>Place the stuffed dough caps on a floured baking tray and bake for 10-15mins until golden.\u00a0<\/p><p>Dissolve the starch in the water, then add the milk, beaten egg and yoghurt. Filter the mixture using a fine sieve.<\/p><p>Thicken the mixture by bringing it to the boil, stirring constantly, then add a teaspoon of salt. Next drop the baked shish barak dumplings into the mixture and leave it on a low heat for eight to ten minutes. The dumplings should be floating on top at this stage.<\/p><p>Fry the garlic in the remaining butter. Add the coriander (optional) and stir until it wilts, then add to the yoghurt sauce before serving.<\/p><p><\/p>"},"id":"ce5a4937-e8ff-4836-9f4c-67b39737b847","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/3uh2BjY9AosTuuMM"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"0c32aef1-935c-4376-ab74-7ae04963484b","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2022-11-22
+
+----
+
+Cover: - file://VTribUL8yk59ZKtN
+
+----
+
+Author: - user://Rrjt8awb
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: 7xN5yVqDe9SN7wrN

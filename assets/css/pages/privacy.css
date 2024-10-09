@@ -1,0 +1,36 @@
+/* pages/privacy.css */
+
+.privacypage {
+    padding-top: 12rem;
+  }
+
+  .privacypage h2 {
+    color: var(--color-white);
+    text-shadow:
+      -1px -1px 0 var(--color-green),
+      1px -1px 0 var(--color-green),
+      -1px 1px 0 var(--color-green),
+      1px 1px 0 var(--color-green);
+  }
+
+  .privacypage h3 {
+    margin-bottom: 1rem;
+  }
+
+  .privacypage p {
+    margin-bottom: 2rem;
+  }
+
+  .privacypage ul,
+  .privacypage ol {
+    margin-bottom: 1rem;
+  }
+
+  .privacypage li {
+    list-style: disc;
+    margin-bottom: 0.5rem;
+  }
+
+  .privacypage ol li {
+    list-style: decimal;
+  }

@@ -1,0 +1,51 @@
+title: About us
+fields:
+  skpteam:
+    label: SKP team
+    type: structure
+    fields:
+      profile:
+        label: Profile
+        type: files
+        width: 1/4
+      name:
+        label: name
+        type: text
+        width: 1/4
+      subtitle:
+        label: Position 
+        type: text
+        width: 2/4
+      bio:
+        label: Bio
+        type: textarea
+
+  board:
+    label: Board Members
+    type: structure
+    fields:
+      profile:
+        label: Profile
+        type: files
+        width: 1/2
+      name:
+        label: name
+        type: text
+        width: 1/2
+      bio:
+        label: Bio
+        type: textarea
+    
+  partners:
+    label: Partners
+    type: structure
+    fields:
+      profile:
+        label: Profile
+        type: files
+        width: 1/2
+      link:
+        label: Link
+        type: url
+        width: 1/2
+  

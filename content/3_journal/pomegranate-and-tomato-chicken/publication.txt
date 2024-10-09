@@ -1,0 +1,33 @@
+Title: Pomegranate and Tomato Chicken
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["file:\/\/3uh2BjY9AosTuuMM"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"52397c96-481a-4598-81a5-36fdefe35d79","isHidden":false,"type":"image"},{"content":{"text":"<p>This dish was inspired by the delicious succulent marinated chicken that\u2019s available at some of our favourite local butchers on Acharnon in Athens. Pomegranate molasses is usually used in middle eastern cooking in lamb or beef dishes, and in our opinion it just isn't used enough! It\u2019s tart, sweet, and can be drizzled on top of pretty much anything. This chicken is the perfect quick midweek dinner but also as the main feature of a feast. Whatever the occasion, we can assure you it will be a crowd pleaser!<\/p>"},"id":"d4129aa8-2e44-4906-ae6a-a18f77cc6598","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/6UtQaOQ160mCbxFg"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"d9ecbbed-6b8f-4cbf-8d92-16d28356b9a1","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>Ingredients for 6 people:<\/strong><\/p><p>1.5 kg sliced chicken breast\u00a0<\/p><p>Juice of 1.5 lemons<\/p><p>350g of chopped fresh tomatoes\u00a0<\/p><p>2 tbsp of tomato paste\u00a0<\/p><p>6 tbsp of pomegranate molasses (plus a little extra to drizzle on before cooking)<\/p><p>3 tbsp olive oil\u00a0<\/p><p>Salt and pepper to taste<\/p><p>SKP Pomegranate Chicken Spice Blend:<\/p><p>     1 tbsp turmeric<\/p><p>     2 tbsp smoked paprika<\/p><p>     1 tbsp curry powder<\/p><p>     1 tsp ground cumin<\/p><p>     1 tsp chili flakes<\/p><p><br><\/p>"},"id":"18fe4f8e-c933-4431-9824-ee89efd8fb0e","isHidden":false,"type":"text"},{"content":{"text":"<p><strong>Method:<\/strong><\/p><p>Slice the chicken in your preferred manner (large cubes or strips) and place in a bowl.\u00a0Add the tomato paste, pomegranate molasses, lemon juice and your SKP Pomegranate Chicken Spice Blend. Mix well and marinate for at least two hours to ensure maximum flavour and tenderness.\u00a0<\/p><p>When ready to cook, remove the chicken from the fridge and season with salt and pepper to taste. Place in an ovenproof dish, drizzle on a couple of tablespoons of olive oil and add the chopped tomatoes. At this point I like to add another squeeze of the pomegranate molasses to ensure extra tart stickiness.<\/p><p>Place in the oven at 180\u00b0C for 20-25 minutes, or until fully cooked through. Alternatively, you can also cook this in a frying pan. Just make sure you keep it at a medium to low heat to avoid burning and ensuring the perfect caramelization. You may also need to add a little water to keep it saucy and prevent it drying out.\u00a0<\/p><p>The chicken goes perfectly with anything; from rice to salad, but we like it best when accompanied with our rosemary and garlic roasted skin on potatoes.\u00a0<\/p><p>Serve immediately and enjoy!\u00a0<\/p><p><\/p>"},"id":"ce5a4937-e8ff-4836-9f4c-67b39737b847","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/3uh2BjY9AosTuuMM"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"0c32aef1-935c-4376-ab74-7ae04963484b","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2023-05-19
+
+----
+
+Cover: - file://6UtQaOQ160mCbxFg
+
+----
+
+Author: - user://Rrjt8awb
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: qSPBalRxrsmjL7ME

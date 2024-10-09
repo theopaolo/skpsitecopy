@@ -1,0 +1,33 @@
+Title: Daphne's Beef with Plums
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["recipe-deco.png"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"52397c96-481a-4598-81a5-36fdefe35d79","isHidden":false,"type":"image"},{"content":{"text":"<p>Daphne our maternity cover coordinator has shared her family favourite - Beef with Plums.<\/p><p>\"Every year on the 1st of January we have a big family gathering at my mom\u2019s house to celebrate New Year\u2019s Day. The celebration is extra special as it\u2019s also her name day. This Beef with Plum dish has been everyone\u2019s favourite for years in a row and it personally reminds me of those cosy family parties on a crisp winter day. It\u2019s rich, comforting and delicious!\"<\/p>"},"id":"d4129aa8-2e44-4906-ae6a-a18f77cc6598","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["beef-with-plums.jpg"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"9a14c49b-3d38-4732-a2b9-026cf80eb110","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>Ingredients for 4 people:<\/strong><\/p><p>1kg beef pieces\u00a0<\/p><p>1 large onion sliced\u00a0<\/p><p>2 leeks sliced\u00a0<\/p><p>400gr dried plums<\/p><p>473ml red wine\u00a0(you can also use orange juice)<\/p><p>35ml brandy (optional)\u00a0<\/p><p>300ml vegetable stock<\/p><p>3-4 tbsp olive oil<\/p><p>2 bay leaves\u00a0<\/p><p>Thyme\u00a0(to taste)<\/p><p>Salt\u00a0and pepper\u00a0to taste<\/p><p><\/p><p><\/p>"},"id":"18fe4f8e-c933-4431-9824-ee89efd8fb0e","isHidden":false,"type":"text"},{"content":{"text":"<p><\/p><p><strong>Method:<\/strong><\/p><p>Soak the dried plumbs in the red wine or orange juice <strong>2 hours before<\/strong> you start cooking.<\/p><p>On a medium heat, saut\u00e9 the onion and leeks until soft and then set aside.<\/p><p>In another large pot heat the oil on a medium-high heat. Once hot, add the beef and stir until all the meat is nicely browned.<\/p><p>Add the saut\u00e9ed onion and leeks to the beef and then pour in the brandy (optional), stock, and any wine or orange juice that hasn\u2019t been absorbed by the dried plums.<\/p><p>Next add the bay leaves, thyme and salt and pepper to taste. Leave to simmer on a low heat for 1hour. When 30mins are remaining, add the dried plums.<\/p><p>Serve this heartwarming dish with a side of steamed rice or crispy roast potatoes.<\/p>"},"id":"ce5a4937-e8ff-4836-9f4c-67b39737b847","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["recipe-deco.png"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"4f677c8b-ca7d-4d81-8a68-ceba3d1d697e","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2022-11-22
+
+----
+
+Cover: - beef-with-plums.jpg
+
+----
+
+Author: - Rrjt8awb
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: nyIcWl2RkuWZ4MVX

@@ -1,0 +1,171 @@
+/* pages/publications.css */
+
+.pub-header {
+    z-index: 888;
+  }
+
+  .pub-header .head {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+  }
+
+  .pub-header .head p {
+    margin-bottom: 0.5rem;
+    font-size: 1.225rem;
+  }
+
+  .publications {
+    color: var(--color-green);
+    z-index: 777;
+  }
+
+  .publications p {
+    margin-bottom: 1rem;
+  }
+
+  .pubpage a {
+    text-decoration: underline;
+  }
+
+  .publications figure {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .publications figcaption {
+    text-align: right;
+    font-style: normal;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .publications blockquote,
+  .publications q {
+    font-family: var(--font-woodland);
+    margin: 1.5rem 0;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .publications article figure {
+    padding: unset;
+  }
+
+  .publications article:hover {
+    cursor: pointer;
+  }
+
+  .featured {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .featured h3,
+  .all-pubs h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .featured p,
+  .featured .date,
+  .all-pubs p,
+  .all-pubs .date {
+    font-size: 0.85rem;
+    line-height: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .featured .date,
+  .all-pubs .date {
+    display: block;
+  }
+
+  .cover {
+    width: 100%;
+    padding-bottom: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+  }
+
+  .all-pubs .cover {
+    margin-bottom: 1rem;
+  }
+
+  .publications figure.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .publications figure.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Added missing styles */
+  .pubpage img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .cover-img {
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* Additional styles that were missing */
+  .journalpage,
+  .privacypage {
+    padding-top: 12rem;
+  }
+
+  .journalpage h2,
+  .privacypage h2 {
+    color: var(--color-white);
+    text-shadow:
+      -1px -1px 0 var(--color-green),
+      1px -1px 0 var(--color-green),
+      -1px 1px 0 var(--color-green),
+      1px 1px 0 var(--color-green);
+  }
+
+  .journalpage h3,
+  .privacypage h3 {
+    margin-bottom: 1rem;
+  }
+
+  .grid-cols-9-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    grid-gap: 1.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .grid-cols-9-auto article {
+    grid-column: span 3;
+    margin-bottom: 2rem;
+  }
+
+  .grid-cols-9-auto article span {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .img-h-full {
+    height: 100%;
+    object-fit: cover;
+  }

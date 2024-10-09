@@ -1,0 +1,61 @@
+/* pages/donate.css */
+
+.donatepage {
+    padding-top: 12rem;
+  }
+
+  .donate-intro h2 {
+    color: var(--color-pink);
+    text-shadow:
+      -1px -1px 0 var(--color-yellow),
+      1px -1px 0 var(--color-yellow),
+      -1px 1px 0 var(--color-yellow),
+      1px 1px 0 var(--color-yellow);
+  }
+
+  .donate-intro a {
+    text-decoration: underline;
+  }
+
+  .donate-intro section p {
+    font-size: 1rem;
+  }
+
+  .donatehere {
+    font-family: var(--font-woodland);
+    font-size: 1.225rem;
+    border: unset;
+    width: 12vw;
+    height: 12vw;
+    min-width: 150px;
+    min-height: 150px;
+  }
+
+  .donate {
+    font-weight: bold;
+    font-family: var(--font-woodland);
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100rem;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 9999;
+  }
+
+  .donate span {
+    border-radius: 100rem;
+    padding: 0.5rem;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .donate span a {
+    font-size: 1rem;
+  }

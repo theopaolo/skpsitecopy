@@ -1,0 +1,33 @@
+Title: Kimuli's Luwombo Chicken
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["recipe-deco.png"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"5bb85b64-7449-4c77-89f2-f1333c2a15ee","isHidden":false,"type":"image"},{"content":{"text":"<p>This is a traditional Ugandan recipe shared by Chef Kimuli and would be the centre of attention at any celebration. Prepared with care, this dish traditionally uses banana leaves to wrap a blend of chicken and vegetables, before steaming for hours over a charcoal stove. This adaption of the recipe is a little more friendly for home cooking and only needs to steam for an hour.<\/p>"},"id":"d4129aa8-2e44-4906-ae6a-a18f77cc6598","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["luwombo-chicken.jpg"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"9a14c49b-3d38-4732-a2b9-026cf80eb110","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>Ingredients for 8 people:<\/strong><\/p><p>900g chicken, cut into serving sized pieces<\/p><p>125g unsalted peanuts, finely ground<\/p><p>2 onions, halved and sliced<\/p><p>4 tomatoes, chopped<\/p><p>100g mushrooms, sliced<\/p><p>1 chicken stock cube<\/p><p>Salt and black pepper, to taste<\/p><p>Banana leaves (one per serving) or greaseproof paper<\/p><p>1 smoked fish (optional)<\/p><p>3 plantains, peeled and cut into 2cm chunks<\/p>"},"id":"18fe4f8e-c933-4431-9824-ee89efd8fb0e","isHidden":false,"type":"text"},{"content":{"text":"<p><strong>Method:<\/strong><\/p><p>Brown the meat in an oiled frying pan, then remove and set aside. You may need to do this in batches so as not to crowd the pan.<\/p><p>In the same frying pan add a couple of tablespoons of oil followed by the onion slices. Saut\u00e9 for 10 to 15 minutes to lightly caramelize them, then add the mushrooms and cook for 5 more minutes. Next add the tomatoes, chicken stock cube, salt, pepper, peanuts and the smoked fish. If necessary add a little water to form a smooth sauce. Cook to heat through and thicken up the sauce just a bit.<\/p><p>Plunge the banana leaves in boiling water to soften them, remove the mid-rib and cut the ends off the leaves to form rectangles. If you buy packed banana leaves, most brands have already removed the mid rib for you. Place a portion of meat and some of the sauce in the centre of a leaf. Then add two or three chunks of peeled plantain.<\/p><p>Fold the leaf from the sides and wrap from the ends to make at least a double layer. Tie into a package with oven-proof string then repeat until all the mixture is used up.<\/p><p>Place a wire rack or trivet in the bottom of a large casserole dish then add water to the bottom of the trivet. Place the meat packages on top of the trivet and cover the dish. Bring to a boil and steam the packets for an hour.<\/p><p>Remove the packets from the pot and serve, enjoying the delicious aroma as you unwrap your parcel - an essential part of the Luwombo experience...<\/p><p><\/p><p>Tip: You can also try this with various fillings using coloured strings to help you identify each one!<\/p>"},"id":"ce5a4937-e8ff-4836-9f4c-67b39737b847","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["recipe-deco.png"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"d87464e7-fafc-4e66-9cb4-d0b410ac7406","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2022-11-22
+
+----
+
+Cover: - luwombo-chicken.jpg
+
+----
+
+Author: - Rrjt8awb
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: 9db1teWRio9BAAL4

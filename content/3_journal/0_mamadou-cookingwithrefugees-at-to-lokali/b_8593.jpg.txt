@@ -1,0 +1,5 @@
+Uuid: ofJYeeezxM2Dll6B
+
+----
+
+Template: blocks/image

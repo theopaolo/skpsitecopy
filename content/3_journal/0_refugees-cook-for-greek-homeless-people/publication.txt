@@ -1,0 +1,33 @@
+Title: Press: Refugees Cook for Greek Homeless People - Deutsche Welle
+
+----
+
+Maincontent: [{"content":{"level":"h2","text":"Press: Refugees Cook for Greek Homeless People - Deutsche Welle"},"id":"5f1fe54c-7b74-4ddd-add5-65336b008e91","isHidden":false,"type":"heading"},{"content":{"text":"<p>In September 2023 we were visited by journalist Florian Schmitz from the German newspaper DW. He spent a few days with us at SKP learning about our mission and creating a short viedo about our work supporting vulnerable and homeless people in Athens by providing them with warm and nutritious meals.<\/p><p>This video is currently featured on the DW news site - watch it here!<\/p><p><a href=\"https:\/\/www.dw.com\/de\/gefl%C3%BCchtete-kochen-f%C3%BCr-griechische-obdachlose\/video-67070673\" rel=\"noopener noreferrer\">https:\/\/www.dw.com\/de\/gefl%C3%BCchtete-kochen-f%C3%BCr-griechische-obdachlose\/video-67070673<\/a><\/p>"},"id":"995fa53b-4c63-4ebc-865c-3bbd3cbc23d8","isHidden":false,"type":"text"}]
+
+----
+
+Published: 2023-10-11
+
+----
+
+Cover: - file://guquEYiry8AxQRuL
+
+----
+
+Author: 
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: 54iZwGclR94SPnQP

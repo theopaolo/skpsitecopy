@@ -1,0 +1,52 @@
+/* themes.css */
+
+.storypage {
+    background-color: var(--color-yellow);
+    color: var(--color-green);
+  }
+
+  .otherpages {
+    background-color: var(--color-orange);
+    color: var(--color-green);
+  }
+
+  .homefoot {
+    color: var(--color-green);
+    background-color: var(--color-orange);
+  }
+
+  .donatepage {
+    padding-top: 12rem;
+  }
+
+  .donate-intro h2 {
+    color: var(--color-pink);
+    text-shadow:
+      -1px -1px 0 var(--color-yellow),
+      1px -1px 0 var(--color-yellow),
+      -1px 1px 0 var(--color-yellow),
+      1px 1px 0 var(--color-yellow);
+  }
+
+  .about-intro h2 {
+    color: var(--color-white);
+    text-shadow:
+      -1px -1px 0 var(--color-green),
+      1px -1px 0 var(--color-green),
+      -1px 1px 0 var(--color-green),
+      1px 1px 0 var(--color-green);
+  }
+
+  .involved-intro h2 {
+    color: var(--color-yellow);
+    text-shadow:
+      -1px -1px 0 var(--color-green),
+      1px -1px 0 var(--color-green),
+      -1px 1px 0 var(--color-green),
+      1px 1px 0 var(--color-green);
+  }
+
+  .journalfoot {
+    color: var(--color-pink);
+    background-color: var(--color-white);
+  }

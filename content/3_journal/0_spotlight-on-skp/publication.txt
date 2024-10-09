@@ -1,0 +1,33 @@
+Title: Press: Cooking #With Refugees Festival 2023
+
+----
+
+Maincontent: [{"content":{"level":"h2","text":"Press: Cooking #With Refugees Festival 18-22 June"},"id":"ac810e6c-f39b-4ac1-8f63-fdf8150ac698","isHidden":false,"type":"heading"},{"content":{"text":"<p> <\/p><p>Our Head Chef Adel rose to fame earlier this year when he joined forces with Chef Gogo Delogianni for the Cooking #WithRefugees Festival in Athens, taking over the kitchen of Stoa Kerameiko to create and serve delicious dishes inspired by his Syrian roots.<\/p><p>The festival is organised by UNHCR, the UN Refugee Agency, and partners, and aims to promote inclusion and integration between refugees and their hosting community by showcasing their skills in the kitchen. Four different chefs took part at this years festival, providing 4 days of new food experiences for the local community, demonstrating the positive impact of working together and supporing integration.<\/p><p><\/p>"},"id":"ac11dc71-f869-49d2-adc5-87a5f8cf39f1","isHidden":false,"type":"text"},{"content":{"url":"https:\/\/www.youtube.com\/watch?v=5SYyTObvcb0&ab_channel=unhcrgreece","caption":"Adel &amp; Gogo"},"id":"75428b02-803d-4f1c-8b18-2a67d479aebc","isHidden":false,"type":"video"},{"content":{"text":""},"id":"93462d93-a637-4419-8318-586947eef9b3","isHidden":false,"type":"text"}]
+
+----
+
+Published: 2023-06-23
+
+----
+
+Cover: - file://C3XJR9rMLuUhGDg3
+
+----
+
+Author: 
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: vI0jDWYytPPAYkGd

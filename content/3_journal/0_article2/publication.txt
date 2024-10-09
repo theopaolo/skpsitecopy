@@ -1,0 +1,33 @@
+Title: Welcome to Saffron Kitchen Project
+
+----
+
+Maincontent: [{"content":{"text":"<p><strong>Welcome to Saffron Kitchen Project, we are so very happy you could join us!<\/strong><\/p>"},"id":"66ca62e5-7740-4a10-a37c-bece31395f3c","isHidden":false,"type":"text"},{"content":{"text":"<p>We are very happy to have officially launched and are extremely excited to get cooking come January 2022. The kitchen is currently under construction and as soon as it\u2019s ready we will be all systems go.\u00a0<\/p><p>In the meantime we thought we could let you in on the thought behind the name.<\/p><p>Apart from saffron being a beautiful, luxurious, warm and delicious spice it has a deeper meaning to our founder. It\u2019s used in the official dish of her hometown, Milan - Italy, and it\u2019s the first thing her mother taught her to cook. In fact you can find her family recipe in one of the other journal posts.\u00a0<\/p><p>Saffron is also a wonderful representation of something that has a history in many different culinary traditions. From east to west, it can be found in crunchy Iranian tahdig, to aromatic Afghan kabuli pulao and Indian sweet kesar peda. It is also found in the famous Spanish paella and the delicious Mexican sopa de habas which shows its versatility and popularity.\u00a0<\/p><p>So in some ways it encapsulates what Saffron Kitchen Project is about, people from all over the world coming together to support each other, in this case, through food.\u00a0<\/p><p>With this in mind, we hope to enrich the lives of those we work with and for and to make an impact in the areas of food aid and integration in Athens.\u00a0<\/p><p>Follow us on our journey by subscribing to our newsletter and social media pages found in our footer.<\/p><p>With love,\u00a0<\/p><p>The SKP Team X.\u00a0<\/p>"},"id":"01fdf018-e7d1-4edb-bb28-ac1a936c99c2","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["rectangle-60.jpg"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"9db37c5d-3239-48b1-90d0-03f681da40ac","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2021-11-19
+
+----
+
+Cover: - welcome.png
+
+----
+
+Author: - t1LzqJmz
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: We are very happy to have officially launched and are extremely excited to get cooking come January 2022. The kitchen is currently under construction and as soon as it’s ready we will be all systems go. 
+
+----
+
+Uuid: BwLbdqQjwaYXFuJZ

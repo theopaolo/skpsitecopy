@@ -1,0 +1,9 @@
+Title: Donation
+
+----
+
+Text: Be a part of Saffron Kitchen Project by donating monthly or just once. All of your contributions go towards sustaining our operations, and we are very grateful for the support!
+
+----
+
+Uuid: 7Xm8rPuKFKnwzCqY

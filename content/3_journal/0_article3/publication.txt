@@ -1,0 +1,33 @@
+Title: Saffron Risotto Recipe
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["recipe-deco.png"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"bea5965d-b10b-4fe6-ad39-3c6fbfec6c11","isHidden":false,"type":"image"},{"content":{"text":"<p>It seems only right for our first recipe to be Risotto alla Milanese, the quintessential dish of Milan, and also the first dish I remember being taught to make as a little girl. As Italians, we are traditionalists when it comes to food, and why not? Never mess with a classic! However, a true Milanese will see that this recipe skips the mantecatura (adding butter at the end), which some consider a vital step. But I would like to share with you the way I make it, the way my mother taught me...<\/p>"},"id":"66ca62e5-7740-4a10-a37c-bece31395f3c","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["risotto-lo.jpg"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"3d61d9b7-4a1d-4bc8-a8ee-e161b21eee0b","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>Ingredients for 4 people:<\/strong><\/p><p>320g Carnaroli Rice\u00a0<\/p><p>20gr Butter \/ 2 tablespoons of oil\u00a0<\/p><p>1.2 litres Meat stock (vegetable stock can also be used depending on preferences)<\/p><p>1 medium onion finely chopped<\/p><p>Glug of white wine\u00a0<\/p><p>60 gr parmesan\u00a0<\/p><p>2 large pinches of Saffron\u00a0<\/p><p>30g Bone marrow (optional)\u00a0<\/p><p><\/p>"},"id":"01fdf018-e7d1-4edb-bb28-ac1a936c99c2","isHidden":false,"type":"text"},{"content":{"text":"<p><strong>Method:<\/strong><\/p><p>Melt the butter or oil in a heavy bottom pan. Add the finely chopped onion to the butter and bone marrow and let it soften. In the meantime, heat up your chosen stock, ensuring that it gets very hot; you must never add it cold as it will interrupt the rice cooking.\u00a0<\/p><p>Once the onion is almost translucent, throw in the rice. If you don\u2019t have scales, a foolproof way of making sure you cook enough is to count two handfuls of rice per person. Toast the rice for a couple of minutes and pour in the wine, ensuring it fully evaporates. If you do not wish to add wine you can do the same with a little bit of the stock.\u00a0<\/p><p>After the liquid has fully evaporated, proceed with the cooking for about 15 \u2013 20 minutes, adding the stock one ladle at a time, as needed, as it is absorbed by the rice. The grains have to always be covered by stock and you must stir continually. An old wives\u2019 tale I was told as a child is to always stir in the same direction to ensure the perfect risotto.<\/p><p>About three-quarters of the way into the cooking you can season with salt to taste and add the saffron that has been dissolved into a ladle of the stock. At this point you can also add the parmesan. When it comes to parmesan, in my family it\u2019s the more the better.<\/p><p>Make sure you leave the risotto a little liquid towards the end as it tends to dry a bit while it sits, and serve immediately with extra parmesan and black pepper. Finally enjoy a plate of warm golden delicious goodness.<\/p>"},"id":"46df89d5-5d4f-4c82-9d77-db9aa2916878","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["recipe-deco.png"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"504550bc-e02c-4f26-8437-52a9dc032385","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2021-11-19
+
+----
+
+Cover: - risotto-lo.jpg
+
+----
+
+Author: - t1LzqJmz
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: koXxpSCrEskOH4u5

@@ -1,0 +1,8 @@
+title: Author
+fields:
+    bio:
+      label: Bio
+      type: textarea
+    website:
+      label: Website
+      type: url

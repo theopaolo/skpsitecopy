@@ -1,0 +1,24 @@
+Title: Get involved
+
+----
+
+Text:
+
+<p  class="mb-2">We always welcome applications from talented and committed people willing to enrich our project, support us in our day-to-day work in the kitchen, preparation and distribution of food, general administrative tasks, social media and more. We offer both volunteering positions and job opportunities.</p>
+                
+<h4  class="mb-2 text-lg">Can't be on the ground? </h4>
+
+<p>There are a variety of ways you can offer support from wherever you are; from creating fundraising campaigns, running a marathon or setting up a delicious bake sale. We also gladly accept large bulk food donations to use in the kitchen. For any questions please get in touch.</p>
+
+<h4 class="mb-2 text-lg">The characteristics and skills of a SKP volunteer?</h4>
+                
+<p>Kindness, emotional intelligence and resilience; a willingness to participate in a variety of roles, and to be part of a team; to be highly motivated and hard working. You must have proficiency in English, and fluency in context relevant languages (e.g. Greek/Arabic/French/Farsi) is an advantage.</p>
+<p class="text-bold">Please bring with you a love for food, a need to get stuck in, the willingness to work together. If that’s you, apply below. </p>
+
+https://forms.gle/BHUr4mnp7JMYddi66
+
+<p>We look forward to hearing from you. </p>
+
+----
+
+Uuid: VWnfYMR2cemBgZTQ

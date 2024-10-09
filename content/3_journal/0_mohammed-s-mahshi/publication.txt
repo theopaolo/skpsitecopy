@@ -1,0 +1,33 @@
+Title: Mohammed's Mahshi
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["file:\/\/rFHVq9dv0aJzlPxu"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"52397c96-481a-4598-81a5-36fdefe35d79","isHidden":false,"type":"image"},{"content":{"text":"<p>Mahshi is a traditional Middle Eastern dish consisting of spiced, herby rice stuffed into vegetables then simmered in tomato sauce, making the vegetables tender and full of flavour. This recipe is a favourite of SKP Kitchen Assistant Mohammed and is great served with tzatziki and tabbouleh. The preparation can take some time but it's worth every bite!<\/p>"},"id":"d4129aa8-2e44-4906-ae6a-a18f77cc6598","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/cyJqF0moRFQzzd5D"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"9a14c49b-3d38-4732-a2b9-026cf80eb110","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>Ingredients for 6-8 people:<\/strong><\/p><p><strong>For the Filling:<\/strong><\/p><p>2 tbsp of tomato paste<\/p><p>1 tbsp of salt<\/p><p>1 tsp lemon salt<\/p><p>1 tbsp black pepper<\/p><p>2 tbsp of mint<\/p><p>1 tbsp harissa paste<\/p><p>2 bulbs of garlic, peeled and chopped<\/p><p>120ml olive oil<\/p><p>1kg rice<\/p><p>\u00a0<\/p><p><strong>For the Sauce:<\/strong><\/p><p>2 tbsp of tomato paste<\/p><p>1 tbsp of mint<\/p><p>1 tbsp of salt<\/p><p>1 tsp lemon salt<\/p><p><\/p><p>4kg zucchini (you can also use aubergines, or a mixture of both)<\/p>"},"id":"18fe4f8e-c933-4431-9824-ee89efd8fb0e","isHidden":false,"type":"text"},{"content":{"text":"<p><strong>Method:<\/strong><\/p><p>Chop off one end of your zucchinis and hollow out the inside being careful not to pierce through the skins. We won\u2019t be using the insides in this recipe, but save them to use another day. This will be the most time consuming part of the preparation. Set the hollowed vegetables aside for now, sprinkling them with salt to help remove moisture.<\/p><p><\/p><p>Wash the rice well, then leave it sitting in cold water. After 10 minutes, drain the rice and add the salt, lemon salt, black pepper, mint, paprika, garlic, olive oil and tomato paste, mixing to distribute the seasoning evenly.<\/p><p>\u00a0<\/p><p>Shake off any water that was drawn out of the zucchini, then fill them around 3\/4 full with the rice mixture. The rice will expand while cooking and fill them the rest of the way. Place these upright in a pot that will hold them snugly together so they won\u2019t fall over while cooking.<\/p><p>\u00a0<\/p><p>Next, prepare the sauce. Mix the tomato paste with 500ml water and add the mint, salt and lemon salt. Pour this into the pot with the zucchini and add more water until they are 3\/4 of the way covered. Place your pot on the heat and bring it to the boil. Reduce to a medium heat and cook for 35-45 mins. Let stand for 15 minutes before serving.<\/p><p><\/p><p><strong>Note:<\/strong> It is difficult to estimate the exact amount of vegetables you will need so it is common to have leftover vegetables or stuffing. Leftover stuffing could be cooked separately as you would cook rice.<\/p><p>This recipe is vegetarian but you can also try adding minced meat that has been partially cooked before stuffing.<\/p>"},"id":"ce5a4937-e8ff-4836-9f4c-67b39737b847","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file:\/\/rFHVq9dv0aJzlPxu"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"d9ecbbed-6b8f-4cbf-8d92-16d28356b9a1","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2022-11-22
+
+----
+
+Cover: - file://cyJqF0moRFQzzd5D
+
+----
+
+Author: - user://Rrjt8awb
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: Hsaf6qAbfDv9Vz1J

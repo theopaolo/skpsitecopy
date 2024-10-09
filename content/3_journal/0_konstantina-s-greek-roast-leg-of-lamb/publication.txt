@@ -1,0 +1,33 @@
+Title: Konstantina's Greek Roast Leg of Lamb
+
+----
+
+Maincontent: [{"content":{"location":"kirby","image":["recipe-deco.png"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"5bb85b64-7449-4c77-89f2-f1333c2a15ee","isHidden":false,"type":"image"},{"content":{"text":"<p>This mouth-watering dish was shared by our Coordinator Konstantina and is sure to impress your friends and family. Slow roasting the lamb makes the meat so tender it will just fall off the bone, and it's full of classic Greek flavours - lemon, oregano, garlic and rosemary. Konstantina likes to pair this with crispy potatoes that have been roasted alongside the meat for extra flavour!<\/p>"},"id":"d4129aa8-2e44-4906-ae6a-a18f77cc6598","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["rpast-lamb.jpg"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"9a14c49b-3d38-4732-a2b9-026cf80eb110","isHidden":false,"type":"image"},{"content":{"text":"<p><strong>Ingredients for 8-10 people:<\/strong><\/p><p><\/p><p>For the Marinade:<\/p><p>180ml\u00a0olive oil<\/p><p>2\u00a0medium\u00a0lemons,\u00a0juiced<\/p><p>4\u00a0cloves\u00a0garlic,\u00a0crushed<\/p><p>2\u00a0sprigs\u00a0rosemary,\u00a0leaves stripped from stems<\/p><p>2\u00a0tablespoons coarse salt<\/p><p>1\u00a0teaspoon\u00a0freshly ground\u00a0black pepper<\/p><p>4kg bone-in\u00a0leg of lamb,\u00a0trimmed of excess fat<\/p><p>\u00a0<\/p><p>For the Potatoes:<\/p><p>2kg\u00a0yellow\u00a0potatoes,\u00a0peeled and cut into wedges<\/p><p>60ml\u00a0olive oil<\/p><p>1\u00a0pinch\u00a0salt<\/p><p>1\u00a0pinch\u00a0freshly ground\u00a0black pepper<\/p><p>1\u00a0teaspoon\u00a0garlic powder<\/p><p>2\u00a0teaspoons\u00a0dried oregano<\/p><p>1\u00a0teaspoon\u00a0dried rosemary<\/p><p>2\u00a0medium\u00a0lemons,\u00a0juiced<\/p><p>Salt,\u00a0to taste,\u00a0optional<\/p>"},"id":"18fe4f8e-c933-4431-9824-ee89efd8fb0e","isHidden":false,"type":"text"},{"content":{"text":"<p><strong>Method:<\/strong><\/p><p><strong>For the Marinade:<\/strong><\/p><p>Add the olive oil, lemon juice, garlic, fresh rosemary leaves, coarse salt, and the pepper to a blender or food processor and process until smooth. The marinade should be thick in consistency so it doesn\u2019t run off the meat while cooking and forms a bit of a crust.<\/p><p>Place the meat in a large roasting pan. Brush a thick layer of marinade on covering as much meat as possible. Refrigerate until ready to roast. Marinating the leg of lamb in the refrigerator for at least 1 to 2 hours before roasting yields an excellent flavour.<\/p><p>\u00a0<\/p><p><strong>For the Potatoes:<\/strong><\/p><p>Preheat the oven to 220\u2103<\/p><p>Add the potatoes to a large bowl. Drizzle with the olive oil and then season with a pinch of salt and pepper. Add the garlic powder, dried oregano, and dried rosemary.<\/p><p>Toss the potatoes well to coat, then scatter the potatoes in the bottom of the roasting pan around the lamb.<\/p><p>\u00a0<\/p><p><strong>For the Lamb:<\/strong><\/p><p>Roast at 220\u2103 for 20 minutes uncovered. Lower the temperature to 180\u2103 and continue to roast, uncovered.<\/p><p>Baste the potatoes and the lamb with pan juices frequently during cooking.<\/p><p>A 4kg leg will take approximately 3 to 3 3\/4 hours to cook, but it's best to use a reliable meat thermometer to gauge doneness because ovens vary. The roast is done when a thermometer inserted into the meatiest part of the leg reaches 70\u2103.<\/p><p>Remove the leg of lamb to a platter, cover, and allow it to rest for at least 15 minutes before slicing.<\/p><p>While the lamb is resting, you can increase the heat of the oven to a low broil setting to give the potatoes a little extra colour, if needed. Otherwise, remove the potatoes to a platter, give them a squeeze of lemon and a sprinkle of salt and then serve with the sliced lamb.<\/p>"},"id":"ce5a4937-e8ff-4836-9f4c-67b39737b847","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["recipe-deco.png"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"d87464e7-fafc-4e66-9cb4-d0b410ac7406","isHidden":false,"type":"image"}]
+
+----
+
+Published: 2022-11-22
+
+----
+
+Cover: - rpast-lamb.jpg
+
+----
+
+Author: - Rrjt8awb
+
+----
+
+Featured: false
+
+----
+
+Jobopen: false
+
+----
+
+Excerpt: 
+
+----
+
+Uuid: MU3grHIQQu4FcaJu

@@ -1,0 +1,6 @@
+title: Files
+
+fields:
+     title:
+        label: Name
+        type: text
