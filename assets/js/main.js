@@ -77,22 +77,23 @@ async function updateContent(e) {
   let newContent = document.querySelector("." + id + " p").innerHTML;
 
   let container = document.querySelector(".container");
+  let article = container.querySelector("article");
 
   container.style.height = container.offsetHeight + "px";
 
-  await Animation.fadeGoals(container.querySelector("article"));
+  await Animation.fadeGoals(article);
 
   oldTitle.innerHTML = newTitle;
   oldContent.innerHTML = newContent;
 
-  let newHeight = document.querySelector(".container article").offsetHeight;
+  let newHeight = article.offsetHeight;
 
   container.style.height =
     newHeight +
     4 * parseFloat(getComputedStyle(document.documentElement).fontSize) +
     "px";
 
-  await Animation.showGoalsContent(container.querySelector("article"));
+  await Animation.showGoalsContent(article);
 }
 
 function addGoalsEvents() {

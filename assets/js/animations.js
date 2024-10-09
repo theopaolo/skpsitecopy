@@ -54,8 +54,8 @@ class Animation {
     let tl = gsap.timeline();
 
     return tl
-      .to(elem, { opacity: 1, duration: 0 })
-      .from(elem, { opacity: 0, duration: 0.5 }, ">.2");
+    .set(elem, { opacity: 0 }) // Set initial opacity to 0
+    .to(elem, { opacity: 1, duration: 0.5 });
   }
 
   // get color from barba container => [data-transition]
@@ -89,4 +89,4 @@ class Animation {
   }
 }
 
-module.exports = new Animation();
+export default new Animation();
