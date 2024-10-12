@@ -2,6 +2,7 @@ import barba from "@barba/core";
 import { makeElemToggler, getDeviceType } from "./sitefunctions";
 import Animation from "./animations.js";
 import Svg from "./svg.js";
+const svg = new Svg();
 
 gsap.registerPlugin(InertiaPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -116,11 +117,43 @@ function _changeColors(headerColor, illusClass) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const dataNamespace = document.querySelector("main").dataset.barbaNamespace;
-  console.log("dom loaded", dataNamespace);
+function setupHomePage() {
+  const header = document.querySelector(".header");
+  header.style.color = "#FFE019";
+  const bgsType = document.querySelectorAll(".bgcolor");
+  const allIllus = document.querySelectorAll(".illus");
+  const donate = document.querySelector(".donate");
+  const bgcolors = ["bgpink", "bggreen", "bgyellow"];
+  let classes = "\\b(" + bgcolors.join("|") + ")\\b";
+  const regex = new RegExp(classes, "i");
 
-  switch (dataNamespace) {
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      let entryclass = entry.target.classList.value;
+      const matchedClass = entryclass.match(regex);
+      if (entry.isIntersecting) {
+        header.classList.add(matchedClass[0]);
+        donate.classList.add(matchedClass[0]);
+        allIllus.forEach((illu) => {
+          illu.classList.add(matchedClass[0]);
+        });
+      } else {
+        header.classList.remove(matchedClass[0]);
+        donate.classList.remove(matchedClass[0]);
+        allIllus.forEach((illu) => {
+          illu.classList.remove(matchedClass[0]);
+        });
+      }
+    });
+  });
+
+  Array.prototype.forEach.call(bgsType, (el) => {
+    observer.observe(el);
+  });
+}
+
+function setupOtherPages(namespace) {
+  switch (namespace) {
     case "journal":
     case "publication":
       _changeColors("#E5194C", "bgwhite");
@@ -133,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
       _changeColors("#FFE019", "bgpink");
       break;
   }
-});
+}
 
 barba.hooks.leave(() => {
   if (history.scrollRestoration) {
@@ -147,108 +180,10 @@ barba.hooks.enter((data) => {
   }
 });
 
-barba.hooks.beforeEnter((data) => {
-  Svg.showSvg(data.next.container);
-});
-
-barba.hooks.after((data) => {
-  if (data.next.namespace === "home") {
-    const header = document.querySelector(".header");
-    header.style.color = "#FFE019";
-    const bgsType = document.querySelectorAll(".bgcolor");
-    const allIllus = document.querySelectorAll(".illus");
-    const donate = document.querySelector(".donate");
-    const bgcolors = ["bgpink", "bggreen", "bgyellow"];
-    let classes = "\\b(" + bgcolors.join("|") + ")\\b";
-    const regex = new RegExp(classes, "i");
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        let entryclass = entry.target.classList.value;
-        const matchedClass = entryclass.match(regex);
-        if (entry.isIntersecting) {
-          header.classList.add(matchedClass[0]);
-          donate.classList.add(matchedClass[0]);
-          allIllus.forEach((illu) => {
-            illu.classList.add(matchedClass[0]);
-          });
-        } else {
-          header.classList.remove(matchedClass[0]);
-          donate.classList.remove(matchedClass[0]);
-          allIllus.forEach((illu) => {
-            illu.classList.remove(matchedClass[0]);
-          });
-        }
-      });
-    });
-
-    Array.prototype.forEach.call(bgsType, (el) => {
-      observer.observe(el);
-    });
-
-    // Add other home-specific behaviors
-    addGoalsEvents();
-    if (support !== "mobile") {
-      Animation.addTextAnimation();
-      Animation.addBtnAnimation();
-    }
-  } else if (
-    data.next.namespace === "about" ||
-    data.next.namespace === "involved"
-  ) {
-    _changeColors("#07453A", "bgyellow");
-  } else if (data.next.namespace === "donate") {
-    _changeColors("#FFE019", "bgpink");
-  } else if (data.next.namespace === "journal") {
-    _changeColors("#E5194C", "bgwhite");
-  } else if (data.next.namespace === "publication") {
-    _changeColors("#FFE019", "bgwhite");
-  }
-});
-
 barba.init({
   sync: true,
   debug: true,
   prevent: ({ el }) => el.classList && el.classList.contains("barba-prevent"),
-  views: [
-    {
-      namespace: "home",
-      afterEnter(data) {
-        console.log("home after enter view");
-        window.addEventListener("DOMContentLoaded", (event) => {
-          const bgsType = document.querySelectorAll(".bgcolor");
-          const allIllus = document.querySelectorAll(".illus");
-          const header = document.querySelector(".header");
-          const donate = document.querySelector(".donate");
-          const bgcolors = ["bgpink", "bggreen", "bgyellow"];
-          let classes = "\\b(" + bgcolors.join("|") + ")\\b";
-          const regex = new RegExp(classes, "i");
-          const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach((entry) => {
-              let entryclass = entry.target.classList.value;
-              const matchedClass = entryclass.match(regex);
-              if (entry.isIntersecting) {
-                header.classList.add(matchedClass[0]);
-                donate.classList.add(matchedClass[0]);
-                allIllus.forEach((illu) => {
-                  illu.classList.add(matchedClass[0]);
-                });
-              } else {
-                header.classList.remove(matchedClass[0]);
-                donate.classList.remove(matchedClass[0]);
-                allIllus.forEach((illu) => {
-                  illu.classList.remove(matchedClass[0]);
-                });
-              }
-            });
-          });
-          Array.prototype.forEach.call(bgsType, (el) => {
-            observer.observe(el);
-          });
-        });
-      },
-    },
-  ],
   transitions: [
     {
       name: "opacity-transition",
@@ -256,23 +191,42 @@ barba.init({
         await Animation.leave(data.current.container);
       },
       async enter(data) {
-        Animation.enter(data.next.container);
-        if (data.next.namespace === "home") {
-          addGoalsEvents();
-          if (support !== "mobile") {
-            Animation.addTextAnimation();
-            Animation.addBtnAnimation();
+        try {
+          await svg.initialize();
+          await svg.showSvg(data.next.container);
+
+          Animation.enter(data.next.container);
+          if (data.next.namespace === "home") {
+            addGoalsEvents();
+            if (support !== "mobile") {
+              Animation.addTextAnimation();
+              Animation.addBtnAnimation();
+            }
+            setupHomePage();
+          } else {
+            setupOtherPages(data.next.namespace);
           }
+        } catch (error) {
+          console.error("Error during enter transition:", error);
         }
       },
+      async once(data) {
+        try {
+          await svg.initialize();
+          await svg.showSvg(data.next.container);
 
-      once(data) {
-        if (data.next.namespace === "home") {
-          addGoalsEvents();
-          if (support !== "mobile") {
-            Animation.addTextAnimation();
-            Animation.addBtnAnimation();
+          if (data.next.namespace === "home") {
+            addGoalsEvents();
+            if (support !== "mobile") {
+              Animation.addTextAnimation();
+              Animation.addBtnAnimation();
+            }
+            setupHomePage();
+          } else {
+            setupOtherPages(data.next.namespace);
           }
+        } catch (error) {
+          console.error("Error during initial page load:", error);
         }
       },
     },

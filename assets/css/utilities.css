@@ -2,61 +2,65 @@
 
 .overflow-hidden {
     overflow: hidden;
-  }
+}
 
-  .text-right {
+.text-right {
     text-align: right;
-  }
+}
 
-  .pointer:hover {
+.pointer:hover {
     cursor: pointer;
-  }
+}
 
-  .opacity-0 {
+.opacity-0 {
     opacity: 0;
-  }
+}
 
-  .s-up {
+.s-up {
     transform: translateY(45px);
-  }
+}
 
-  :is(.bgpink, .bgyellow, .bggreen, .bgwhite) > path {
+:is(.bgpink, .bgyellow, .bggreen, .bgwhite) > path {
     fill: var(--color-yellow);
-  }
+}
 
-  .bggreen > path {
+:is(.bgyellow, ) > path {
+    fill: var(--color-green);
+}
+
+.bggreen > path {
     fill: var(--color-yellow);
-  }
+}
 
-  .bgwhite > path {
+.bgwhite > path {
     fill: var(--color-pink);
-  }
+}
 
-  :is(.bgpink, .bggreen) {
+:is(.bgpink, .bggreen) {
     color: var(--color-yellow) !important;
     border-color: var(--color-yellow) !important;
-  }
+}
 
-  .bgyellow {
+.bgyellow {
     color: var(--color-green) !important;
     border-color: var(--color-green) !important;
-  }
+}
 
-  :is(.bgpink, .bggreen, .bgyellow) .donspan {
+:is(.bgpink, .bggreen, .bgyellow) .donspan {
     color: var(--color-green) !important;
-  }
+}
 
-  .bgpink .donspan,
-  .bggreen .donspan {
+.bgpink .donspan,
+.bggreen .donspan {
     background-color: var(--color-yellow) !important;
-  }
+}
 
-  .bgyellow .donspan {
+.bgyellow .donspan {
     background-color: var(--color-green) !important;
     color: var(--color-yellow) !important;
-  }
+}
 
-  .pointer:hover {
+.pointer:hover {
     cursor: pointer;
 }
 
@@ -65,8 +69,8 @@
     object-fit: cover;
 }
 
-  @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .mt-1 {
-      margin-top: 1rem !important;
+        margin-top: 1rem !important;
     }
-  }
+}
