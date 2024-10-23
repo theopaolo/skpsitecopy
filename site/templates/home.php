@@ -86,37 +86,19 @@ $imgRectangle = new Asset("assets/img/SKPrectangle.jpg");
 
     <section class="goals-wrapper bgcolor bggreen " id="pillars">
       <div class="goals-content">
-
-        <div class='roulette'>
-            <div class="bubl text-lg b-top" data-id="employ">Employ</div>
-            <div class="bubl text-lg b-left" data-id="mourish">Nourish</div>
-            <div class="bubl text-lg b-right" data-id="teach">Train</div>
-        </div>
-
-        <div class='roulette-content'>
-            <div class="container active">
-                <article class='goals' style=''>
-                  <h1>Employ</h1>
-                  <p>We demonstrate our commitment to tackling unemployment in Greece by not only employing but also generating job opportunities for people from the refugee and hosting community.</p>
-                </article>
-            </div>
-
-            <article class='employ'>
-                <h1>Employ</h1>
-                <p>We demonstrate our commitment to tackling unemployment in Greece by not only employing but also generating job opportunities for people from the refugee and hosting community.</p>
-            </article>
-
-            <article class='mourish'>
-                <h1>Nourish</h1>
-                <p>Provide vulnerable people with warm, nutritious and inventive meals in a dignified and sustainable way. We partner with several organisations that support vulnerable people throughout Athens, distributing delicious meals whilst avoiding food waste as much as possible.</p>
-            </article>
-
-            <article class='teach'>
-                <h1>Train</h1>
-                <p>We offer free culinary education and vocational training in partnership with IEK Delta. In an effort to prepare our students for work in the hospitality industry, the programme comprises culinary skills as well as soft skills training such as teamwork, leadership and time management. Upon completion students will receive an accredited EOPEP certificate which will aid them in entering the job market.</p>
-            </article>
-        </div>
-        </div>
+        <article class='goal employ'>
+            <h1>Employ</h1>
+            <p>We demonstrate our commitment to tackling unemployment in Greece by not only employing but also generating job opportunities for people from the refugee and hosting community.</p>
+        </article>
+        <article class='goal mourish'>
+            <h1>Nourish</h1>
+            <p>Provide vulnerable people with warm, nutritious and inventive meals in a dignified and sustainable way. We partner with several organisations that support vulnerable people throughout Athens, distributing delicious meals whilst avoiding food waste as much as possible.</p>
+        </article>
+        <article class='goal teach'>
+            <h1>Train</h1>
+            <p>We offer free culinary education and vocational training in partnership with IEK Delta. In an effort to prepare our students for work in the hospitality industry, the programme comprises culinary skills as well as soft skills training such as teamwork, leadership and time management. Upon completion students will receive an accredited EOPEP certificate which will aid them in entering the job market.</p>
+        </article>
+      </div>
     </section>
 
     <?php snippet("otherpages"); ?>

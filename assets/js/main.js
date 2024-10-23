@@ -4,7 +4,6 @@ import Animation from "./animations.js";
 import Svg from "./svg.js";
 const svg = new Svg();
 
-gsap.registerPlugin(InertiaPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 let openBtn = document.getElementById("openbtn");
@@ -39,43 +38,40 @@ openBtn.addEventListener("click", function () {
   }
 });
 
-function _spinWheel(e) {
-  let top = document.querySelector(".b-top");
+function _spinWheel() {
+  const positions = ["b-left", "b-right", "b-top"];
+  const elements = positions.map((pos) =>
+    document.querySelector(`.roulette .${pos}`),
+  );
 
-  if (e.target === top) {
-    updateContent(e);
-    return;
-  }
+  // Remove the position classes from all elements
+  elements.forEach((el) => {
+    positions.forEach((pos) => el.classList.remove(pos));
+  });
 
-  let old = e.target.className.split(" ")[2];
+  // Rotate the positions array
+  positions.push(positions.shift()); // Move the first position to the end
 
-  if (old === "b-left") {
-    let right = document.querySelector(".b-right");
-    top.classList.remove("b-top");
-    top.classList.add("b-right");
-    right.classList.remove("b-right");
-    right.classList.add("b-left");
-    e.target.classList.remove(old);
-    e.target.classList.add("b-top");
-  } else {
-    let left = document.querySelector(".b-left");
-    top.classList.remove("b-top");
-    top.classList.add("b-left");
-    left.classList.remove("b-left");
-    left.classList.add("b-right");
-    e.target.classList.remove(old);
-    e.target.classList.add("b-top");
-  }
-  updateContent(e);
+  // Assign the new classes to elements
+  elements.forEach((el, index) => {
+    el.classList.add(positions[index]);
+  });
+
+  // Update the content based on the new top element
+  const topElement = document.querySelector(".roulette .b-top");
+  updateContent(topElement);
 }
 
 // Update description content
-async function updateContent(e) {
+async function updateContent(topElement) {
   let oldTitle = document.querySelector(".roulette-content .active h1");
   let oldContent = document.querySelector(".roulette-content .active p");
-  let id = e.target.getAttribute("data-id");
-  let newTitle = document.querySelector("." + id + " h1").innerHTML;
-  let newContent = document.querySelector("." + id + " p").innerHTML;
+  let id = topElement.getAttribute("data-id");
+  let newTitleElement = document.querySelector(`.${id} h1`);
+  let newContentElement = document.querySelector(`.${id} p`);
+
+  let newTitle = newTitleElement ? newTitleElement.innerHTML : "";
+  let newContent = newContentElement ? newContentElement.innerHTML : "";
 
   let container = document.querySelector(".container");
   let article = container.querySelector("article");
@@ -99,9 +95,17 @@ async function updateContent(e) {
 
 function addGoalsEvents() {
   let roulette = document.querySelector(".roulette");
+  let automaticSpinInterval;
+  automaticSpinInterval = setInterval(function () {
+    _spinWheel();
+  }, 3000);
 
+  // Click event for manual spinning
   roulette.addEventListener("click", function (event) {
-    _spinWheel(event);
+    if (event.target.classList.contains("bubl")) {
+      clearInterval(automaticSpinInterval);
+      _spinWheel();
+    }
   });
 }
 
@@ -194,12 +198,21 @@ barba.init({
         try {
           await svg.initialize();
           await svg.showSvg(data.next.container);
+          Animation.cardSlide(goalsCards);
+          // Trigger cardSlide animation after page transition
 
           Animation.enter(data.next.container);
           if (data.next.namespace === "home") {
-            addGoalsEvents();
+            // addGoalsEvents();
+$
             if (support !== "mobile") {
-              Animation.addTextAnimation();
+
+              const goalsCards = document.querySelectorAll('.goal');  // Make sure to get elements after transition
+              if (goalsCards.length > 0) {
+                Animation.cardSlide(goalsCards);
+              }
+
+              // Animation.addTextAnimation();
               Animation.addBtnAnimation();
             }
             setupHomePage();
@@ -214,11 +227,15 @@ barba.init({
         try {
           await svg.initialize();
           await svg.showSvg(data.next.container);
+          const goalsCards = document.querySelectorAll('.goal');  // Make sure to get elements on page load
 
           if (data.next.namespace === "home") {
-            addGoalsEvents();
+            // addGoalsEvents();
             if (support !== "mobile") {
-              Animation.addTextAnimation();
+              if (goalsCards.length > 0) {
+                Animation.cardSlide(goalsCards);
+              }
+              // Animation.addTextAnimation();
               Animation.addBtnAnimation();
             }
             setupHomePage();

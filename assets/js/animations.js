@@ -1,18 +1,18 @@
 class Animation {
-  enterGoals(current, next) {
-    let tl = gsap.timeline();
-    const content = next.querySelector(".goals-content");
+  // enterGoals(current, next) {
+  //   let tl = gsap.timeline();
+  //   const content = next.querySelector(".goals-content");
 
-    return tl
-      .to(current, { display: "none", duration: 0 })
-      .from(content, { opacity: 0, duration: 0.5 }, "<");
-  }
+  //   return tl
+  //     .to(current, { display: "none", duration: 0 })
+  //     .from(content, { opacity: 0, duration: 0.5 }, "<");
+  // }
 
-  fadeGoals(elem) {
-    let tl = gsap.timeline();
+  // fadeGoals(elem) {
+  //   let tl = gsap.timeline();
 
-    return tl.to(elem, { opacity: 0, duration: 0.5 });
-  }
+  //   return tl.to(elem, { opacity: 0, duration: 0.5 });
+  // }
 
   addTextAnimation() {
     let tl = gsap.timeline();
@@ -20,6 +20,24 @@ class Animation {
     return tl
       .to("#textFirst", { backgroundPosition: "0 0", duration: 1 })
       .to("#textSecond", { backgroundPosition: "0 0", duration: 0 }, "<2.5");
+  }
+
+  cardSlide(cards) {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".goals-wrapper",
+        scrub: true,
+        start: "bottom bottom",
+        end: "+=60%",
+      },
+    });
+    return tl
+      .set(cards, { y: "100%" })
+      .to(cards, {
+        y: "-20%",
+        duration: 3.5,
+        stagger: 0.8,
+      });
   }
 
   addBtnAnimation() {
@@ -50,13 +68,13 @@ class Animation {
       .to(".nextpage2", { ease: "none", top: "65%" }, 0, 0.5);
   }
 
-  showGoalsContent(elem) {
-    let tl = gsap.timeline();
+  // showGoalsContent(elem) {
+  //   let tl = gsap.timeline();
 
-    return tl
-    .set(elem, { opacity: 0 }) // Set initial opacity to 0
-    .to(elem, { opacity: 1, duration: 0.5 });
-  }
+  //   return tl
+  //   .set(elem, { opacity: 0 }) // Set initial opacity to 0
+  //   .to(elem, { opacity: 1, duration: 0.5 });
+  // }
 
   // get color from barba container => [data-transition]
   _getColor(elem) {
