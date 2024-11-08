@@ -3,6 +3,7 @@
 namespace Kirby\Panel;
 
 use Kirby\Cms\File as CmsFile;
+use Kirby\Cms\ModelWithContent;
 use Kirby\Filesystem\Asset;
 use Kirby\Toolkit\I18n;
 
@@ -19,15 +20,23 @@ use Kirby\Toolkit\I18n;
 class Page extends Model
 {
 	/**
+	 * @var \Kirby\Cms\Page
+	 */
+	protected ModelWithContent $model;
+
+	/**
 	 * Breadcrumb array
 	 */
 	public function breadcrumb(): array
 	{
 		$parents = $this->model->parents()->flip()->merge($this->model);
-		return $parents->values(fn ($parent) => [
-			'label' => $parent->title()->toString(),
-			'link'  => $parent->panel()->url(true),
-		]);
+
+		return $parents->values(
+			fn ($parent) => [
+				'label' => $parent->title()->toString(),
+				'link'  => $parent->panel()->url(true),
+			]
+		);
 	}
 
 	/**
@@ -65,9 +74,9 @@ class Page extends Model
 	 */
 	public function dropdown(array $options = []): array
 	{
-		$page = $this->model;
-
-		$defaults = $page->kirby()->request()->get(['view', 'sort', 'delete']);
+		$page     = $this->model;
+		$request  = $page->kirby()->request();
+		$defaults = $request->get(['view', 'sort', 'delete']);
 		$options  = array_merge($defaults, $options);
 
 		$permissions = $this->options(['preview']);
@@ -97,15 +106,6 @@ class Page extends Model
 			'text'     => I18n::translate('rename'),
 			'disabled' => $this->isDisabledDropdownOption('changeTitle', $options, $permissions)
 		];
-
-		$result['duplicate'] = [
-			'dialog'   => $url . '/duplicate',
-			'icon'     => 'copy',
-			'text'     => I18n::translate('duplicate'),
-			'disabled' => $this->isDisabledDropdownOption('duplicate', $options, $permissions)
-		];
-
-		$result[] = '-';
 
 		$result['changeSlug'] = [
 			'dialog' => [
@@ -143,6 +143,23 @@ class Page extends Model
 		];
 
 		$result[] = '-';
+
+		$result['move'] = [
+			'dialog'   => $url . '/move',
+			'icon'     => 'parent',
+			'text'     => I18n::translate('page.move'),
+			'disabled' => $this->isDisabledDropdownOption('move', $options, $permissions)
+		];
+
+		$result['duplicate'] = [
+			'dialog'   => $url . '/duplicate',
+			'icon'     => 'copy',
+			'text'     => I18n::translate('duplicate'),
+			'disabled' => $this->isDisabledDropdownOption('duplicate', $options, $permissions)
+		];
+
+		$result[] = '-';
+
 		$result['delete'] = [
 			'dialog'   => $url . '/delete',
 			'icon'     => 'trash',
@@ -196,10 +213,7 @@ class Page extends Model
 	protected function imageSource(
 		string|null $query = null
 	): CmsFile|Asset|null {
-		if ($query === null) {
-			$query = 'page.image';
-		}
-
+		$query ??= 'page.image';
 		return parent::imageSource($query);
 	}
 
@@ -234,8 +248,9 @@ class Page extends Model
 	 */
 	public function position(): int
 	{
-		return $this->model->num() ??
-			   $this->model->parentModel()->children()->listed()->not($this->model)->count() + 1;
+		return
+			$this->model->num() ??
+			$this->model->parentModel()->children()->listed()->not($this->model)->count() + 1;
 	}
 
 	/**
@@ -292,7 +307,7 @@ class Page extends Model
 					->filter('status', $page->status());
 			}
 
-			return $siblings->filter('isReadable', true);
+			return $siblings->filter('isListable', true);
 		};
 
 		return [
@@ -324,6 +339,7 @@ class Page extends Model
 					'previewUrl' => $page->previewUrl(),
 					'status'     => $page->status(),
 					'title'      => $page->title()->toString(),
+					'uuid'       => fn () => $page->uuid()?->toString(),
 				],
 				'status' => function () use ($page) {
 					if ($status = $page->status()) {

@@ -9,12 +9,20 @@ use Kirby\Cms\File;
 use Kirby\Cms\Page;
 use Kirby\Cms\Site;
 use Kirby\Cms\User;
+use Kirby\Image\QrCode;
 use Kirby\Toolkit\I18n;
 
 /**
- * The Query class can be used to
- * query arrays and objects, including their
- * methods with a very simple string-based syntax.
+ * The Query class can be used to query arrays and objects,
+ * including their methods with a very simple string-based syntax.
+ *
+ * Namespace structure - what handles what:
+ * - Query			Main interface, direct entries
+ * - Expression		Simple comparisons (`a ? b :c`)
+ * - Segments		Chain of method calls (`site.find('notes').url`)
+ * - Segment		Single method call (`find('notes')`)
+ * - Arguments		Method call parameters (`'template', '!=', 'note'`)
+ * - Argument		Single parameter, resolving into actual types
  *
  * @package   Kirby Query
  * @author    Bastian Allgeier <bastian@getkirby.com>,
@@ -44,7 +52,7 @@ class Query
 	/**
 	 * Creates a new Query object
 	 */
-	public static function factory(string $query): static
+	public static function factory(string|null $query): static
 	{
 		return new static(query: $query);
 	}
@@ -90,7 +98,7 @@ class Query
 		}
 
 		// loop through all segments to resolve query
-		return Segments::factory($this->query, $this)->resolve($data);
+		return Expression::factory($this->query, $this)->resolve($data);
 	}
 }
 
@@ -110,13 +118,16 @@ Query::$entries['file'] = function (string $id): File|null {
 };
 
 Query::$entries['page'] = function (string $id): Page|null {
-	return App::instance()->site()->find($id);
+	return App::instance()->page($id);
+};
+
+Query::$entries['qr'] = function (string $data): QrCode {
+	return new QrCode($data);
 };
 
 Query::$entries['site'] = function (): Site {
 	return App::instance()->site();
 };
-
 
 Query::$entries['t'] = function (
 	string $key,

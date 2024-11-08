@@ -3,6 +3,8 @@
 namespace Kirby\Filesystem;
 
 use Kirby\Cms\FileModifications;
+use Kirby\Cms\HasMethods;
+use Kirby\Exception\BadMethodCallException;
 
 /**
  * Anything in your public path can be converted
@@ -20,22 +22,49 @@ class Asset
 {
 	use IsFile;
 	use FileModifications;
+	use HasMethods;
 
 	/**
 	 * Relative file path
 	 */
-	protected string|null $path = null;
+	protected string|null $path;
+
 
 	/**
 	 * Creates a new Asset object for the given path.
 	 */
 	public function __construct(string $path)
 	{
-		$this->setProperties([
-			'path' => dirname($path),
-			'root' => $this->kirby()->root('index') . '/' . $path,
-			'url'  => $this->kirby()->url('base') . '/' . $path
-		]);
+		$this->root = $this->kirby()->root('index') . '/' . $path;
+		$this->url  = $this->kirby()->url('base') . '/' . $path;
+
+		$path = dirname($path);
+		$this->path = $path === '.' ? '' : $path;
+	}
+
+	/**
+	 * Magic caller for asset methods
+	 *
+	 * @throws \Kirby\Exception\BadMethodCallException
+	 */
+	public function __call(string $method, array $arguments = []): mixed
+	{
+		// public property access
+		if (isset($this->$method) === true) {
+			return $this->$method;
+		}
+
+		// asset method proxy
+		if (method_exists($this->asset(), $method)) {
+			return $this->asset()->$method(...$arguments);
+		}
+
+		// asset methods
+		if ($this->hasMethod($method)) {
+			return $this->callMethod($method, $arguments);
+		}
+
+		throw new BadMethodCallException('The method: "' . $method . '" does not exist');
 	}
 
 	/**
@@ -85,16 +114,5 @@ class Asset
 	public function path(): string
 	{
 		return $this->path;
-	}
-
-	/**
-	 * Setter for the path
-	 *
-	 * @return $this
-	 */
-	protected function setPath(string $path): static
-	{
-		$this->path = $path === '.' ? '' : $path;
-		return $this;
 	}
 }

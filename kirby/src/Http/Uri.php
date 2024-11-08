@@ -4,7 +4,7 @@ namespace Kirby\Http;
 
 use Kirby\Cms\App;
 use Kirby\Exception\InvalidArgumentException;
-use Kirby\Toolkit\Properties;
+use SensitiveParameter;
 use Throwable;
 
 /**
@@ -18,8 +18,6 @@ use Throwable;
  */
 class Uri
 {
-	use Properties;
-
 	/**
 	 * Cache for the current Uri object
 	 */
@@ -28,32 +26,32 @@ class Uri
 	/**
 	 * The fragment after the hash
 	 */
-	protected string|false|null $fragment = null;
+	protected string|false|null $fragment;
 
 	/**
 	 * The host address
 	 */
-	protected string|null $host = null;
+	protected string|null $host;
 
 	/**
 	 * The optional password for basic authentication
 	 */
-	protected string|false|null $password = null;
+	protected string|false|null $password;
 
 	/**
 	 * The optional list of params
 	 */
-	protected Params|null $params = null;
+	protected Params $params;
 
 	/**
 	 * The optional path
 	 */
-	protected Path|null $path = null;
+	protected Path $path;
 
 	/**
 	 * The optional port number
 	 */
-	protected int|false|null $port = null;
+	protected int|false|null $port;
 
 	/**
 	 * All original properties
@@ -63,24 +61,66 @@ class Uri
 	/**
 	 * The optional query string without leading ?
 	 */
-	protected Query|null $query = null;
+	protected Query $query;
 
 	/**
 	 * https or http
 	 */
-	protected string|null $scheme = 'http';
+	protected string|null $scheme;
 
 	/**
 	 * Supported schemes
 	 */
 	protected static array $schemes = ['http', 'https', 'ftp'];
 
-	protected bool $slash = false;
+	protected bool $slash;
 
 	/**
 	 * The optional username for basic authentication
 	 */
 	protected string|false|null $username = null;
+
+	/**
+	 * Creates a new URI object
+	 *
+	 * @param array $inject Additional props to inject if a URL string is passed
+	 */
+	public function __construct(array|string $props = [], array $inject = [])
+	{
+		if (is_string($props) === true) {
+			// make sure the URL parser works properly when there's a
+			// colon in the string but the string is a relative URL
+			if (Url::isAbsolute($props) === false) {
+				$props = 'https://getkirby.com/' . $props;
+				$props = parse_url($props);
+				unset($props['scheme'], $props['host']);
+			} else {
+				$props = parse_url($props);
+			}
+
+			$props['username'] = $props['user'] ?? null;
+			$props['password'] = $props['pass'] ?? null;
+
+			$props = array_merge($props, $inject);
+		}
+
+		// parse the path and extract params
+		if (empty($props['path']) === false) {
+			$props = static::parsePath($props);
+		}
+
+		$this->props = $props;
+		$this->setFragment($props['fragment'] ?? null);
+		$this->setHost($props['host'] ?? null);
+		$this->setParams($props['params'] ?? null);
+		$this->setPassword($props['password'] ?? null);
+		$this->setPath($props['path'] ?? null);
+		$this->setPort($props['port'] ?? null);
+		$this->setQuery($props['query'] ?? null);
+		$this->setScheme($props['scheme'] ?? 'http');
+		$this->setSlash($props['slash'] ?? false);
+		$this->setUsername($props['username'] ?? null);
+	}
 
 	/**
 	 * Magic caller to access all properties
@@ -99,29 +139,6 @@ class Uri
 		$this->path   = clone $this->path;
 		$this->query  = clone $this->query;
 		$this->params = clone $this->params;
-	}
-
-	/**
-	 * Creates a new URI object
-	 *
-	 * @param array $inject Additional props to inject if a URL string is passed
-	 */
-	public function __construct(array|string $props = [], array $inject = [])
-	{
-		if (is_string($props) === true) {
-			$props = parse_url($props);
-			$props['username'] = $props['user'] ?? null;
-			$props['password'] = $props['pass'] ?? null;
-
-			$props = array_merge($props, $inject);
-		}
-
-		// parse the path and extract params
-		if (empty($props['path']) === false) {
-			$props = static::parsePath($props);
-		}
-
-		$this->setProperties($this->props = $props);
 	}
 
 	/**
@@ -207,7 +224,9 @@ class Uri
 	}
 
 	/**
-	 * Returns the domain without scheme, path or query
+	 * Returns the domain without scheme, path or query.
+	 * Includes auth part when not empty.
+	 * Includes port number when different from 80 or 443.
 	 */
 	public function domain(): string|null
 	{
@@ -224,7 +243,10 @@ class Uri
 
 		$domain .= $this->host;
 
-		if ($this->port !== null && in_array($this->port, [80, 443]) === false) {
+		if (
+			$this->port !== null &&
+			in_array($this->port, [80, 443]) === false
+		) {
 			$domain .= ':' . $this->port;
 		}
 
@@ -324,8 +346,10 @@ class Uri
 	/**
 	 * @return $this
 	 */
-	public function setPassword(string|null $password = null): static
-	{
+	public function setPassword(
+		#[SensitiveParameter]
+		string|null $password = null
+	): static {
 		$this->password = $password;
 		return $this;
 	}
@@ -408,7 +432,7 @@ class Uri
 	{
 		$array = [];
 
-		foreach ($this->propertyData as $key => $value) {
+		foreach ($this->props as $key => $value) {
 			$value = $this->$key;
 
 			if (is_object($value) === true) {

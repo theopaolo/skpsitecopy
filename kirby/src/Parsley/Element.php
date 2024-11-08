@@ -21,22 +21,21 @@ use Kirby\Toolkit\Str;
  */
 class Element
 {
-	protected array $marks;
-	protected DOMElement $node;
-
-	public function __construct(DOMElement $node, array $marks = [])
-	{
-		$this->marks = $marks;
-		$this->node  = $node;
+	public function __construct(
+		protected DOMElement $node,
+		protected array $marks = []
+	) {
 	}
 
 	/**
 	 * The returns the attribute value or
 	 * the given fallback if the attribute does not exist
 	 */
-	public function attr(string $attr, string|null $fallback = null): string|null
-	{
-		if ($this->node->hasAttribute($attr)) {
+	public function attr(
+		string $attr,
+		string|null $fallback = null
+	): string|null {
+		if ($this->node->hasAttribute($attr) === true) {
 			return $this->node->getAttribute($attr) ?? $fallback;
 		}
 
@@ -96,7 +95,7 @@ class Element
 	 * Tries to find a single nested element by
 	 * query and otherwise returns null
 	 */
-	public function find(string $query): Element|null
+	public function find(string $query): static|null
 	{
 		if ($result = $this->query($query)[0]) {
 			return new static($result);
@@ -107,10 +106,14 @@ class Element
 
 	/**
 	 * Returns the inner HTML of the element
+	 *
+	 * @param array|null $marks List of allowed marks
 	 */
 	public function innerHtml(array|null $marks = null): string
 	{
-		return (new Inline($this->node, $marks ?? $this->marks))->innerHtml();
+		$marks ??= $this->marks;
+		$inline  = new Inline($this->node, $marks);
+		return $inline->innerHtml();
 	}
 
 	/**

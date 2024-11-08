@@ -36,11 +36,12 @@ return [
 		},
 		'sanitizeOption' => function ($value) {
 			$options = array_column($this->options(), 'value');
-			return in_array($value, $options, true) === true ? $value : null;
+			return in_array($value, $options) === true ? $value : null;
 		},
 		'sanitizeOptions' => function ($values) {
 			$options = array_column($this->options(), 'value');
-			return array_intersect($values, $options);
+			$options = array_intersect($values, $options);
+			return array_values($options);
 		},
 	]
 ];

@@ -475,12 +475,13 @@ class F
 	/**
 	 * Get the file's last modification time.
 	 *
-	 * @param string $handler date, intl or strftime
+	 * @param 'date'|'intl'|'strftime'|null $handler Custom date handler or `null`
+	 *                                               for the globally configured one
 	 */
 	public static function modified(
 		string $file,
 		string|IntlDateFormatter|null $format = null,
-		string $handler = 'date'
+		string|null $handler = null
 	): string|int|false {
 		if (file_exists($file) !== true) {
 			return false;
@@ -514,12 +515,33 @@ class F
 			static::remove($newRoot);
 		}
 
-		// actually move the file if it exists
-		if (rename($oldRoot, $newRoot) !== true) {
-			return false;
+		$directory = dirname($newRoot);
+
+		// create the parent directory if it does not exist
+		if (is_dir($directory) === false) {
+			Dir::make($directory, true);
 		}
 
-		return true;
+		// atomically moving the file will only work if
+		// source and target are on the same filesystem
+		if (stat($oldRoot)['dev'] === stat($directory)['dev']) {
+			// same filesystem, we can move the file
+			return rename($oldRoot, $newRoot) === true;
+		}
+
+		// @codeCoverageIgnoreStart
+		// not the same filesystem; we need to copy
+		// the file and unlink the source afterwards
+		if (copy($oldRoot, $newRoot) === true) {
+			return unlink($oldRoot) === true;
+		}
+
+		// copying failed, ensure the new root isn't there
+		// (e.g. if the file could be created but there's no
+		// more remaining disk space to write its contents)
+		static::remove($newRoot);
+		return false;
+		// @codeCoverageIgnoreEnd
 	}
 
 	/**
@@ -558,7 +580,7 @@ class F
 		}
 
 		// the math magic
-		$size = round($size / pow(1024, ($unit = floor(log($size, 1024)))), 2);
+		$size = round($size / 1024 ** ($unit = floor(log($size, 1024))), 2);
 
 		// format the number if requested
 		if ($locale !== false) {
@@ -706,7 +728,8 @@ class F
 	}
 
 	/**
-	 * Sanitize a filename to strip unwanted special characters
+	 * Sanitize a file's full name (filename and extension)
+	 * to strip unwanted special characters
 	 *
 	 * <code>
 	 *
@@ -719,12 +742,46 @@ class F
 	 */
 	public static function safeName(string $string): string
 	{
-		$name          = static::name($string);
-		$extension     = static::extension($string);
-		$safeName      = Str::slug($name, '-', 'a-z0-9@._-');
-		$safeExtension = empty($extension) === false ? '.' . Str::slug($extension) : '';
+		$basename  = static::safeBasename($string);
+		$extension =  static::safeExtension($string);
 
-		return $safeName . $safeExtension;
+		if (empty($extension) === false) {
+			$extension = '.' . $extension;
+		}
+
+		return $basename . $extension;
+	}
+
+	/**
+	 * Sanitize a file's name (without extension)
+	 * @since 4.0.0
+	 */
+	public static function safeBasename(
+		string $string,
+		bool $extract = true
+	): string {
+		// extract only the name part from whole filename string
+		if ($extract === true) {
+			$string = static::name($string);
+		}
+
+		return Str::slug($string, '-', 'a-z0-9@._-');
+	}
+
+	/**
+	 * Sanitize a file's extension
+	 * @since 4.0.0
+	 */
+	public static function safeExtension(
+		string $string,
+		bool $extract = true
+	): string {
+		// extract only the extension part from whole filename string
+		if ($extract === true) {
+			$string = static::extension($string);
+		}
+
+		return Str::slug($string);
 	}
 
 	/**
@@ -755,11 +812,11 @@ class F
 			);
 		}
 
-		try {
-			return filesize($file);
-		} catch (Throwable) {
-			return 0;
+		if ($size = @filesize($file)) {
+			return $size;
 		}
+
+		return 0;
 	}
 
 	/**

@@ -17,15 +17,12 @@ use Kirby\Exception\InvalidArgumentException;
  */
 trait AppCaches
 {
-	protected $caches = [];
+	protected array $caches = [];
 
 	/**
 	 * Returns a cache instance by key
-	 *
-	 * @param string $key
-	 * @return \Kirby\Cache\Cache
 	 */
-	public function cache(string $key)
+	public function cache(string $key): Cache
 	{
 		if (isset($this->caches[$key]) === true) {
 			return $this->caches[$key];
@@ -44,7 +41,7 @@ trait AppCaches
 
 		if (array_key_exists($type, $types) === false) {
 			throw new InvalidArgumentException([
-				'key'  => 'app.invalid.cacheType',
+				'key'  => 'cache.type.invalid',
 				'data' => ['type' => $type]
 			]);
 		}
@@ -57,7 +54,7 @@ trait AppCaches
 		// check if it is a usable cache object
 		if ($cache instanceof Cache === false) {
 			throw new InvalidArgumentException([
-				'key'  => 'app.invalid.cacheType',
+				'key'  => 'cache.type.invalid',
 				'data' => ['type' => $type]
 			]);
 		}
@@ -67,9 +64,6 @@ trait AppCaches
 
 	/**
 	 * Returns the cache options by key
-	 *
-	 * @param string $key
-	 * @return array
 	 */
 	protected function cacheOptions(string $key): array
 	{
@@ -82,9 +76,10 @@ trait AppCaches
 			];
 		}
 
-		$prefix = str_replace(['/', ':'], '_', $this->system()->indexUrl()) .
-				  '/' .
-				  str_replace('.', '/', $key);
+		$prefix =
+			str_replace(['/', ':'], '_', $this->system()->indexUrl()) .
+			'/' .
+			str_replace('.', '/', $key);
 
 		$defaults = [
 			'active'    => true,
@@ -105,9 +100,6 @@ trait AppCaches
 	 * Takes care of converting prefixed plugin cache setups
 	 * to the right cache key, while leaving regular cache
 	 * setups untouched.
-	 *
-	 * @param string $key
-	 * @return string
 	 */
 	protected function cacheOptionsKey(string $key): string
 	{

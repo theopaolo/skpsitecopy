@@ -4,6 +4,7 @@ namespace Kirby\Option;
 
 use Kirby\Cms\ModelWithContent;
 use Kirby\Cms\Nest;
+use Kirby\Content\Field;
 use Kirby\Data\Json;
 use Kirby\Exception\NotFoundException;
 use Kirby\Http\Remote;
@@ -88,8 +89,12 @@ class OptionsApi extends OptionsProvider
 	 * Creates the actual options by loading
 	 * data from the API and resolving it to
 	 * the correct text-value entries
+	 *
+	 * @param bool $safeMode Whether to escape special HTML characters in
+	 *                       the option text for safe output in the Panel;
+	 *                       only set to `false` if the text is later escaped!
 	 */
-	public function resolve(ModelWithContent $model): Options
+	public function resolve(ModelWithContent $model, bool $safeMode = true): Options
 	{
 		// use cached options if present
 		// @codeCoverageIgnoreStart
@@ -101,25 +106,41 @@ class OptionsApi extends OptionsProvider
 		// apply property defaults
 		$this->defaults();
 
-		// load data from URL and narrow down to queried part
+		// load data from URL and convert from JSON to array
 		$data = $this->load($model);
 
+		// @codeCoverageIgnoreStart
 		if ($data === null) {
 			throw new NotFoundException('Options could not be loaded from API: ' . $model->toSafeString($this->url));
 		}
+		// @codeCoverageIgnoreEnd
 
 		// turn data into Nest so that it can be queried
+		// or field methods applied to the data
 		$data = Nest::create($data);
-		$data = Query::factory($this->query)->resolve($data);
+
+		// optionally query a substructure inside the data array
+		$data    = Query::factory($this->query)->resolve($data);
+		$options = [];
 
 		// create options by resolving text and value query strings
 		// for each item from the data
-		$options = $data->toArray(fn ($item) => [
-			// value is always a raw string
-			'value' => $model->toString($this->value, ['item' => $item]),
-			// text is only a raw string when using {< >}
-			'text' => $model->toSafeString($this->text, ['item' => $item]),
-		]);
+		foreach ($data as $key => $item) {
+			// convert simple `key: value` API data
+			if (is_string($item) === true) {
+				$item = new Field(null, $key, $item);
+			}
+
+			$safeMethod = $safeMode === true ? 'toSafeString' : 'toString';
+
+			$options[] = [
+				// value is always a raw string
+				'value' => $model->toString($this->value, ['item' => $item]),
+				// text is only a raw string when using {< >}
+				// or when the safe mode is explicitly disabled (select field)
+				'text' => $model->$safeMethod($this->text, ['item' => $item])
+			];
+		}
 
 		// create Options object and render this subsequently
 		return $this->options = Options::factory($options);

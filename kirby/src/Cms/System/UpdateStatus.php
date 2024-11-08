@@ -158,7 +158,9 @@ class UpdateStatus
 		// collect all matching custom messages
 		$filters = [
 			'kirby' => $this->app->version(),
-			'php'   => phpversion()
+			// some PHP version strings contain extra info that makes them
+			// invalid so we need to strip it off
+			'php'   => preg_replace('/^([^~+-]+).*$/', '$1', phpversion())
 		];
 
 		if ($type === 'plugin') {
@@ -204,6 +206,20 @@ class UpdateStatus
 				'link' => $versionEntry['status-link'] ?? 'https://getkirby.com/security/end-of-life',
 				'icon' => 'bell'
 			];
+		}
+
+		// add special message for end-of-life PHP versions
+		$phpMajor = PHP_MAJOR_VERSION . '.' . PHP_MINOR_VERSION;
+		$phpEol   = $this->data['php'][$phpMajor] ?? null;
+		if (is_string($phpEol) === true && $eolTime = strtotime($phpEol)) {
+			// the timestamp is available and valid, now check if it is in the past
+			if ($eolTime < time()) {
+				$messages[] = [
+					'text' => I18n::template('system.issues.eol.php', null, ['release' => $phpMajor]),
+					'link' => 'https://getkirby.com/security/php-end-of-life',
+					'icon' => 'bell'
+				];
+			}
 		}
 
 		return $this->messages = $messages;
@@ -377,6 +393,46 @@ class UpdateStatus
 	}
 
 	/**
+	 * Finds the maximum possible major update
+	 * that is included with the current license
+	 *
+	 * @return string|null Version number of the update or
+	 *                     `null` if no free update is possible
+	 */
+	protected function findMaximumFreeUpdate(): string|null
+	{
+		// get the timestamp of included updates
+		$renewal = $this->app->system()->license()->renewal();
+
+		if ($renewal === null || $this->data === null) {
+			return null;
+		}
+
+		foreach ($this->data['versions'] ?? [] as $entry) {
+			$initialRelease = $entry['initialRelease'] ?? null;
+			$latest         = $entry['latest'] ?? '';
+
+			// skip entries of irrelevant releases
+			if (
+				is_string($initialRelease) !== true ||
+				version_compare($latest, $this->currentVersion, '<=') === true
+			) {
+				continue;
+			}
+
+			$timestamp = strtotime($initialRelease);
+
+			// update is free if the initial release was before the
+			// license renewal date
+			if (is_int($timestamp) === true && $timestamp < $renewal) {
+				return $latest;
+			}
+		}
+
+		return null;
+	}
+
+	/**
 	 * Finds the minimum possible security update
 	 * to fix all known vulnerabilities
 	 *
@@ -435,9 +491,7 @@ class UpdateStatus
 				// verify that we found at least one possible version;
 				// otherwise try the `$maxVersion` as a last chance before
 				// concluding at the top that we cannot solve the task
-				if ($incidentVersion === null) {
-					$incidentVersion = $maxVersion;
-				}
+				$incidentVersion ??= $maxVersion;
 
 				// we need a version that fixes all vulnerabilities, so use the
 				// "largest of the smallest" fixed versions
@@ -641,13 +695,26 @@ class UpdateStatus
 			];
 		}
 
-		// check if free updates are possible from the current version
+		// check if updates within the same major version are possible
 		$latest = $versionEntry['latest'] ?? null;
 		if (is_string($latest) === true && $latest !== $this->currentVersion) {
 			return $this->targetData = [
 				'status'  => 'update',
 				'url'     => $this->urlFor($latest, 'changes'),
 				'version' => $latest
+			];
+		}
+
+		// check if the license includes updates to a newer major version
+		if ($version = $this->findMaximumFreeUpdate()) {
+			// extract the part before the first dot
+			// to find the major release page URL
+			preg_match('/^(\w+)\./', $version, $matches);
+
+			return $this->targetData = [
+				'status'  => 'update',
+				'url'     => $this->urlFor($matches[1] . '.0', 'changes'),
+				'version' => $version
 			];
 		}
 

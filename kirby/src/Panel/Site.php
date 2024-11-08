@@ -3,6 +3,7 @@
 namespace Kirby\Panel;
 
 use Kirby\Cms\File as CmsFile;
+use Kirby\Cms\ModelWithContent;
 use Kirby\Filesystem\Asset;
 
 /**
@@ -17,6 +18,11 @@ use Kirby\Filesystem\Asset;
  */
 class Site extends Model
 {
+	/**
+	 * @var \Kirby\Cms\Site
+	 */
+	protected ModelWithContent $model;
+
 	/**
 	 * Returns the setup for a dropdown option
 	 * which is used in the changes dropdown
@@ -38,10 +44,7 @@ class Site extends Model
 	protected function imageSource(
 		string|null $query = null
 	): CmsFile|Asset|null {
-		if ($query === null) {
-			$query = 'site.image';
-		}
-
+		$query ??= 'site.image';
 		return parent::imageSource($query);
 	}
 
@@ -68,6 +71,7 @@ class Site extends Model
 				'link'       => $this->url(true),
 				'previewUrl' => $this->model->previewUrl(),
 				'title'      => $this->model->title()->toString(),
+				'uuid'       => fn () => $this->model->uuid()?->toString(),
 			]
 		]);
 	}

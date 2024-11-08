@@ -9,16 +9,12 @@
 
 <main data-barba="container" data-barba-namespace="about" data-color="#FFFFFF" data-transition="#07453A"  style="background-color:#FFFFFF; color:#07453A">
 
-    <div class="donate" style="border-color: #07453A ">
-    <a href="<?= page('donation')->url() ?>">
-        <span style="background-color:#07453A; color:#FFE019"> Donate </span>
-    </a>
+    <div class="donate shopbubl" style="border-color: #07453A ">
+        <a href="<?= page('donation')->url() ?>">
+            <span class="donspan" style="background-color:#07453A; color:#FFE019"> Donate </span>
+        </a>
     </div>
-    <div class="donate shopbubl">
-      <a href="https://saffronkitchenproject.bigcartel.com/products" target="_blank">
-        <span class="donspan" style="background-color:#07453A; color:#FFE019">Shop</span>
-      </a>
-    </div>
+
         <div class="aboutpage content grid-cols-12">
 
             <section class="about-intro span-4-10 lg-span-2-12 xs-span-1-13 ">

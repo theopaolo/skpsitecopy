@@ -10,13 +10,11 @@
   <span class="transition"></span>
 
     <main data-barba="container" data-barba-namespace="journal" data-color="#FFFFFF"  data-transition="#07453A" style="background-color:#FFFFFF;color:#E5194C">
-        <div class="donate" style="border-color: #FFE019 "><span style="background-color:#FFE019; color:#E5194C"><a href="<?= page(
-            "donation"
-        )->url() ?>"> Donate</a></span></div>
-        <div class="donate shopbubl">
-            <a href="https://saffronkitchenproject.bigcartel.com/products" target="_blank">
-                <span class="donspan" style="background-color:#FFE019; color:#E5194C">Shop</span>
-            </a>
+
+        <div class="donate shopbubl" style="border-color: #FFE019 ">
+            <span  class="donspan"  style="background-color:#FFE019; color:#E5194C">
+                <a href="<?= page( "donation" )->url() ?>"> Donate</a>
+            </span>
         </div>
 
         <div class="journalpage content grid-cols-12">

@@ -4,7 +4,7 @@ namespace Kirby\Toolkit;
 
 use Countable;
 use Exception;
-use Kirby\Cms\Field;
+use Kirby\Content\Field;
 use Kirby\Exception\InvalidArgumentException;
 use Kirby\Http\Idn;
 use Kirby\Uuid\Uuid;
@@ -24,23 +24,19 @@ class V
 {
 	/**
 	 * An array with all installed validators
-	 *
-	 * @var array
 	 */
-	public static $validators = [];
+	public static array $validators = [];
 
 	/**
 	 * Validates the given input with all passed rules
 	 * and returns an array with all error messages.
 	 * The array will be empty if the input is valid
-	 *
-	 * @param mixed $input
-	 * @param array $rules
-	 * @param array $messages
-	 * @return array
 	 */
-	public static function errors($input, array $rules, $messages = []): array
-	{
+	public static function errors(
+		$input,
+		array $rules,
+		array $messages = []
+	): array {
 		$errors = static::value($input, $rules, $messages, false);
 
 		return $errors === true ? [] : $errors;
@@ -50,14 +46,12 @@ class V
 	 * Runs a number of validators on a set of data and
 	 * checks if the data is invalid
 	 * @since 3.7.0
-	 *
-	 * @param array $data
-	 * @param array $rules
-	 * @param array $messages
-	 * @return array
 	 */
-	public static function invalid(array $data = [], array $rules = [], array $messages = []): array
-	{
+	public static function invalid(
+		array $data = [],
+		array $rules = [],
+		array $messages = []
+	): array {
 		$errors = [];
 
 		foreach ($rules as $field => $validations) {
@@ -119,13 +113,11 @@ class V
 	 * Creates a useful error message for the given validator
 	 * and the arguments. This is used mainly internally
 	 * to create error messages
-	 *
-	 * @param string $validatorName
-	 * @param mixed ...$params
-	 * @return string|null
 	 */
-	public static function message(string $validatorName, ...$params): string|null
-	{
+	public static function message(
+		string $validatorName,
+		...$params
+	): string|null {
 		$validatorName  = strtolower($validatorName);
 		$translationKey = 'error.validation.' . $validatorName;
 		$validators     = array_change_key_case(static::$validators);
@@ -142,16 +134,13 @@ class V
 			$value = $params[$index] ?? null;
 
 			if (is_array($value) === true) {
-				try {
-					foreach ($value as $key => $item) {
-						if (is_array($item) === true) {
-							$value[$key] = implode('|', $item);
-						}
+				foreach ($value as $key => $item) {
+					if (is_array($item) === true) {
+						$value[$key] = A::implode($item, '|');
 					}
-					$value = implode(', ', $value);
-				} catch (Throwable) {
-					$value = '-';
 				}
+
+				$value = implode(', ', $value);
 			}
 
 			$arguments[$parameter->getName()] = $value;
@@ -162,8 +151,6 @@ class V
 
 	/**
 	 * Return the list of all validators
-	 *
-	 * @return array
 	 */
 	public static function validators(): array
 	{
@@ -174,15 +161,13 @@ class V
 	 * Validate a single value against
 	 * a set of rules, using all registered
 	 * validators
-	 *
-	 * @param mixed $value
-	 * @param array $rules
-	 * @param array $messages
-	 * @param bool $fail
-	 * @return bool|array
 	 */
-	public static function value($value, array $rules, array $messages = [], bool $fail = true)
-	{
+	public static function value(
+		$value,
+		array $rules,
+		array $messages = [],
+		bool $fail = true
+	): bool|array {
 		$errors = [];
 
 		foreach ($rules as $validatorName => $validatorOptions) {
@@ -214,10 +199,6 @@ class V
 	 * Validate an input array against
 	 * a set of rules, using all registered
 	 * validators
-	 *
-	 * @param array $input
-	 * @param array $rules
-	 * @return bool
 	 */
 	public static function input(array $input, array $rules): bool
 	{
@@ -252,10 +233,6 @@ class V
 
 	/**
 	 * Calls an installed validator and passes all arguments
-	 *
-	 * @param string $method
-	 * @param array $arguments
-	 * @return bool
 	 */
 	public static function __callStatic(string $method, array $arguments): bool
 	{
@@ -301,8 +278,17 @@ V::$validators = [
 	 * Checks for numbers within the given range
 	 */
 	'between' => function ($value, $min, $max): bool {
-		return V::min($value, $min) === true &&
-			   V::max($value, $max) === true;
+		return
+			V::min($value, $min) === true &&
+			V::max($value, $max) === true;
+	},
+
+	/**
+	 * Checks with the callback sent by the user
+	 * It's ideal for one-time custom validations
+	 */
+	'callback' => function ($value, callable $callback): bool {
+		return $callback($value);
 	},
 
 	/**
@@ -415,8 +401,9 @@ V::$validators = [
 	 * Checks for a valid filename
 	 */
 	'filename' => function ($value): bool {
-		return V::match($value, '/^[a-z0-9@._-]+$/i') === true &&
-			   V::min($value, 2) === true;
+		return
+			V::match($value, '/^[a-z0-9@._-]+$/i') === true &&
+			V::min($value, 2) === true;
 	},
 
 	/**
@@ -467,7 +454,7 @@ V::$validators = [
 	 * Checks if the value matches the given regular expression
 	 */
 	'match' => function ($value, string $pattern): bool {
-		return preg_match($pattern, $value) !== 0;
+		return preg_match($pattern, (string)$value) === 1;
 	},
 
 	/**
@@ -612,6 +599,13 @@ V::$validators = [
 	 */
 	'startsWith' => function (string $value, string $start): bool {
 		return Str::startsWith($value, $start);
+	},
+
+	/**
+	 * Checks for a valid unformatted telephone number
+	 */
+	'tel' => function ($value): bool {
+		return V::match($value, '!^[+]{0,1}[0-9]+$!');
 	},
 
 	/**

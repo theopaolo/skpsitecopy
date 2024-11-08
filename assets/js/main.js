@@ -198,13 +198,16 @@ barba.init({
         try {
           await svg.initialize();
           await svg.showSvg(data.next.container);
-          Animation.cardSlide(goalsCards);
+          const goalsCards = document.querySelectorAll('.goal');  // Make sure to get elements after transition
+          if (goalsCards.length > 0) {
+            Animation.cardSlide(goalsCards);
+          }
+
           // Trigger cardSlide animation after page transition
 
           Animation.enter(data.next.container);
           if (data.next.namespace === "home") {
             // addGoalsEvents();
-$
             if (support !== "mobile") {
 
               const goalsCards = document.querySelectorAll('.goal');  // Make sure to get elements after transition

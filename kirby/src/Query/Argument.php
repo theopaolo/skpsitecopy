@@ -15,7 +15,7 @@ use Kirby\Toolkit\Str;
  * @copyright Bastian Allgeier
  * @license   https://opensource.org/licenses/MIT
  */
-final class Argument
+class Argument
 {
 	public function __construct(
 		public mixed $value
@@ -23,25 +23,38 @@ final class Argument
 	}
 
 	/**
-	 * Sanitizes argument string into
+	 * Sanitizes argument string into actual
 	 * PHP type/object as new Argument instance
 	 */
 	public static function factory(string $argument): static
 	{
 		$argument = trim($argument);
 
-		// string with single or double quotes
+		// remove grouping parantheses
 		if (
-			(
-				Str::startsWith($argument, '"') &&
-				Str::endsWith($argument, '"')
-			) || (
-				Str::startsWith($argument, "'") &&
-				Str::endsWith($argument, "'")
-			)
+			Str::startsWith($argument, '(') &&
+			Str::endsWith($argument, ')')
+		) {
+			$argument = trim(substr($argument, 1, -1));
+		}
+
+		// string with single quotes
+		if (
+			Str::startsWith($argument, "'") &&
+			Str::endsWith($argument, "'")
 		) {
 			$string = substr($argument, 1, -1);
-			$string = str_replace(['\"', "\'"], ['"', "'"], $string);
+			$string = str_replace("\'", "'", $string);
+			return new static($string);
+		}
+
+		// string with double quotes
+		if (
+			Str::startsWith($argument, '"') &&
+			Str::endsWith($argument, '"')
+		) {
+			$string = substr($argument, 1, -1);
+			$string = str_replace('\"', '"', $string);
 			return new static($string);
 		}
 
@@ -57,6 +70,10 @@ final class Argument
 
 		// numeric
 		if (is_numeric($argument) === true) {
+			if (strpos($argument, '.') === false) {
+				return new static((int)$argument);
+			}
+
 			return new static((float)$argument);
 		}
 

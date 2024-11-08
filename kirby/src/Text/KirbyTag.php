@@ -2,10 +2,11 @@
 
 namespace Kirby\Text;
 
+use AllowDynamicProperties;
 use Closure;
 use Kirby\Cms\App;
 use Kirby\Cms\File;
-use Kirby\Cms\Model;
+use Kirby\Cms\ModelWithContent;
 use Kirby\Exception\BadMethodCallException;
 use Kirby\Exception\InvalidArgumentException;
 use Kirby\Uuid\Uri as UuidUri;
@@ -19,7 +20,11 @@ use Kirby\Uuid\Uuid;
  * @link      https://getkirby.com
  * @copyright Bastian Allgeier
  * @license   https://opensource.org/licenses/MIT
+ *
+ * @todo remove the following psalm suppress when PHP >= 8.2 required
+ * @psalm-suppress UndefinedAttributeClass
  */
+#[AllowDynamicProperties]
 class KirbyTag
 {
 	public static array $aliases = [];
@@ -143,6 +148,7 @@ class KirbyTag
 
 		return $this->kirby()->file($path, null, true);
 	}
+
 	/**
 	 * Returns the current Kirby instance
 	 */
@@ -171,7 +177,7 @@ class KirbyTag
 		}
 
 		$pos  = strpos($tag, ':');
-		$type = trim(substr($tag, 0, $pos ? $pos : null));
+		$type = trim(substr($tag, 0, $pos ?: null));
 		$type = strtolower($type);
 		$attr = static::$types[$type]['attr'] ?? [];
 
@@ -211,9 +217,9 @@ class KirbyTag
 	/**
 	 * Returns the parent model
 	 */
-	public function parent(): Model|null
+	public function parent(): ModelWithContent|null
 	{
-		return $this->data['parent'];
+		return $this->data['parent'] ?? null;
 	}
 
 	public function render(): string
