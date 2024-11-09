@@ -1,7 +1,7 @@
 <?php snippet("header"); ?>
 <?php
-$imgRound = new Asset("assets/img/SKPround.jpg");
-$imgRectangle = new Asset("assets/img/SKPrectangle.jpg");
+  $imgRound = new Asset("assets/img/SKPround.jpg");
+  $imgRectangle = new Asset("assets/img/SKPrectangle.jpg");
 ?>
 
 <body data-barba="wrapper" style="background-color:#E5194C;color:#FFE019">
@@ -37,8 +37,8 @@ $imgRectangle = new Asset("assets/img/SKPrectangle.jpg");
       </span>
 
       <div class="bottombtn span-4-10 lg-span-2-12 xs-span-1-13">
-          <div class="butbtn" style="background-color:#FFE019;"></div>
-          <a class="nextpage" style="color:#E5194C">Our Story</a>
+          <div class="bottom-circle" style="background-color:#FFE019;"></div>
+          <a class="next-section" style="color:#E5194C">Our Story</a>
       </div>
     </section>
 
@@ -81,12 +81,11 @@ $imgRectangle = new Asset("assets/img/SKPrectangle.jpg");
               <path d="M30 41.3C19.3966 41.3 15 44.372 15 60.5M15 60.5C15 44.372 10.6034 41.3 -5.91332e-07 41.3M15 60.5L15 0.499999" stroke="#07453A"/>
             </svg>
           </span>
-
         </div>
 
         <div class="bottombtn span-4-10 lg-span-2-12 xs-span-1-13">
-          <div class="butbtn2" style="background-color:#07453A;"></div>
-          <a class="nextpage2" style="color:#FFE019">Our Pillars</a>
+          <div class="bottom-circle2" style="background-color:#07453A;"></div>
+          <a class="next-section2" style="color:#FFE019">Our Pillars</a>
         </div>
     </section>
 
@@ -107,7 +106,7 @@ $imgRectangle = new Asset("assets/img/SKPrectangle.jpg");
       </div>
     </section>
 
-    <?php snippet("otherpages"); ?>
+    <?php snippet ("otherpages");?>
     <?php snippet("footer", ["class" => "homefoot"]); ?>
   </main>
   <?= js("assets/dist/js/main.js") ?>

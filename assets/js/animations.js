@@ -1,18 +1,4 @@
 class Animation {
-  // enterGoals(current, next) {
-  //   let tl = gsap.timeline();
-  //   const content = next.querySelector(".goals-content");
-
-  //   return tl
-  //     .to(current, { display: "none", duration: 0 })
-  //     .from(content, { opacity: 0, duration: 0.5 }, "<");
-  // }
-
-  // fadeGoals(elem) {
-  //   let tl = gsap.timeline();
-
-  //   return tl.to(elem, { opacity: 0, duration: 0.5 });
-  // }
 
   addTextAnimation() {
     let tl = gsap.timeline();
@@ -27,7 +13,7 @@ class Animation {
       scrollTrigger: {
         trigger: ".goals-wrapper",
         scrub: true,
-        start: "bottom bottom",
+        start: "start 100px",
         end: "+=60%",
       },
     });
@@ -45,36 +31,28 @@ class Animation {
       .timeline({
         scrollTrigger: {
           trigger: ".storyAnim",
-          scrub: true,
+          scrub: 1,
           pin: true,
           start: "bottom bottom",
           end: "+=40%",
         },
       })
-      .to(".butbtn", { bottom: 0, transform: "none", scale: 8, ease: "none" })
-      .to(".nextpage", { ease: "none", top: "65%" }, 0, 0.5);
+      .to(".bottom-circle", { bottom: 0, transform: "none", scale: 8, ease: "none" })
+      .to(".next-section", { ease: "none", top: "65%" }, 0, 0.5);
 
     const tl2 = gsap
       .timeline({
         scrollTrigger: {
-          trigger: ".storypage",
-          scrub: true,
-          pin: true,
-          start: "bottom bottom",
-          end: "+=40%",
+          trigger: ".story-end",
+          scrub: 1,
+          pin: false,
+          start: "bottom bottom+=150",
+          end: "+=70%",
         },
       })
-      .to(".butbtn2", { bottom: 0, transform: "none", scale: 8, ease: "none" })
-      .to(".nextpage2", { ease: "none", top: "65%" }, 0, 0.5);
+      .to(".bottom-circle2", { bottom: 0, transform: "none", scale: 8, ease: "none" })
+      .to(".next-section2", { ease: "none", top: "65%" }, 0, 0.5);
   }
-
-  // showGoalsContent(elem) {
-  //   let tl = gsap.timeline();
-
-  //   return tl
-  //   .set(elem, { opacity: 0 }) // Set initial opacity to 0
-  //   .to(elem, { opacity: 1, duration: 0.5 });
-  // }
 
   // get color from barba container => [data-transition]
   _getColor(elem) {

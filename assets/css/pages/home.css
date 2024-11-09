@@ -195,8 +195,9 @@
   left: 0;
 }
 
-.butbtn,
-.butbtn2 {
+.bottom-circle,
+.bottom-circle2,
+.bottom-circle3 {
   position: absolute;
   bottom: 0;
   width: 65vw;
@@ -205,8 +206,18 @@
   transform: translateY(65%);
 }
 
-.nextpage,
-.nextpage2 {
+.bottom-circle2 {
+  position: absolute;
+  bottom: 0;
+  width: 65vw;
+  height: 32vw;
+  border-radius: 150rem 150rem 0 0;
+  transform: translateY(55%);
+}
+
+.next-section,
+.next-section2,
+.next-section3 {
   font-family: var(--font-woodland);
   position: absolute;
   justify-content: center;
@@ -225,6 +236,7 @@
   margin: 0 auto;
   padding: 2rem 1.5rem 5rem;
   margin-top: -1px;
+  padding-top: 35rem;
 }
 
 .goals-content .goal {
@@ -311,6 +323,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .otherpages h2 {
