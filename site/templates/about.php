@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 <body data-barba="wrapper" style="background-color:#FBE368;color:#07453A">
-  <div class="header" style="color:#07453A">
+  <div class="header bgwhite" style="color:#07453A">
     <?php snippet('navbtn') ?>
     <?php snippet('menu') ?>
   </div>
@@ -9,11 +9,17 @@
 
 <main data-barba="container" data-barba-namespace="about" data-color="#FFFFFF" data-transition="#07453A"  style="background-color:#FFFFFF; color:#07453A">
 
-    <div class="donate shopbubl" style="border-color: #07453A ">
-        <a href="<?= page('donation')->url() ?>">
-            <span class="donspan" style="background-color:#07453A; color:#FFE019"> Donate </span>
-        </a>
-    </div>
+        <div class="donate" style="border-color: #07453A ">
+            <a href="<?= page('donation')->url() ?>">
+                <span class="donspan" style="background-color:#07453A; color:#FFE019">Donate</span>
+            </a>
+        </div>
+
+        <div class="donate shopbubl">
+            <a href="https://saffronkitchenproject.bigcartel.com/" target="_blank">
+                <span class="donspan" style="background-color:#07453A; color:#FFE019">Shop</span>
+            </a>
+        </div>
 
         <div class="aboutpage content grid-cols-12">
 

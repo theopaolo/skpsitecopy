@@ -35,27 +35,28 @@
     font-weight: bold;
     font-family: var(--font-woodland);
     position: fixed;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100rem;
     right: 0.5rem;
     top: 0.5rem;
-    z-index: 9999;
+    z-index: 99;
   }
 
   .donate span {
+    font-size: .85rem;
     border-radius: 100rem;
-    padding: 0.5rem;
-    width: 90px;
-    height: 90px;
+    padding: 0.25rem;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .donate span a {
-    font-size: 1rem;
+  .shopbubl {
+    top: 5rem;
   }

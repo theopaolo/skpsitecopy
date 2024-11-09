@@ -9,18 +9,159 @@ class Svg {
     this.SVG_SIZE = "30vw";
     this.SVG_CONTENT = [];
     this.svgCache = new Map();
+    this.observer = null;
+    this.currentColorClass = null;
+    this.loadingSvgs = new Map();
+    this.currentElement = null;
+    this.initializeObserver();
+
+    // Add resize handler
+    window.addEventListener('resize', this.handleResize.bind(this));
+
+    // Add color class mutation observer
+    this.initializeColorObserver();
   }
 
-  async initialize() {
-    try {
-      for (const name of this.ILLUSTRATION_NAMES) {
-        const svg = await this.loadSvg(name);
-        if (svg) {
-          this.SVG_CONTENT.push([svg, this.extractViewBox(svg)]);
+  initializeColorObserver() {
+    // Create mutation observer to watch for color class changes
+    this.colorObserver = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+          const header = document.querySelector('.header');
+          if (header) {
+            const colorClasses = ['bgpink', 'bggreen', 'bgyellow', 'bgwhite'];
+            const currentColor = colorClasses.find(cls => header.classList.contains(cls));
+            if (currentColor && this.currentColorClass !== currentColor) {
+              this.currentColorClass = currentColor;
+              this.updateAllSvgColors(currentColor);
+            }
+          }
         }
+      });
+    });
+
+    // Start observing header element
+    const header = document.querySelector('.header');
+    if (header) {
+      this.colorObserver.observe(header, {
+        attributes: true,
+        attributeFilter: ['class']
+      });
+    }
+  }
+
+  updateAllSvgColors(colorClass) {
+    const allIllus = document.querySelectorAll('.illus');
+    const colorClasses = ['bgpink', 'bggreen', 'bgyellow', 'bgwhite'];
+
+    allIllus.forEach(illu => {
+      // Remove all color classes
+      colorClasses.forEach(cls => illu.classList.remove(cls));
+      // Add new color class
+      illu.classList.add(colorClass);
+    });
+  }
+
+  handleResize() {
+    clearTimeout(this.resizeTimeout);
+    this.resizeTimeout = setTimeout(() => {
+      if (this.currentElement) {
+        this.showSvg(this.currentElement);
       }
+    }, 200);
+  }
+
+  initializeObserver() {
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const placeholder = entry.target;
+            const svgName = placeholder.dataset.svgName;
+            const svgIndex = placeholder.dataset.svgIndex;
+            if (svgName && svgIndex) {
+              // Only unobserve after successful load
+              this.loadAndReplacePlaceholder(placeholder, svgName, parseInt(svgIndex))
+                .then(success => {
+                  if (success) {
+                    this.observer.unobserve(placeholder);
+                  }
+                });
+            }
+          }
+        });
+      },
+      {
+        rootMargin: '50px 0px',
+        threshold: 0.1
+      }
+    );
+  }
+
+  async loadAndReplacePlaceholder(placeholder, svgName, index) {
+    try {
+      const svg = await this.loadSvg(svgName);
+      if (!svg) return false;
+
+      const parser = new DOMParser();
+      const svgDoc = parser.parseFromString(svg, "image/svg+xml");
+      const svgElem = svgDoc.documentElement;
+
+      if (!(svgElem instanceof SVGElement)) {
+        throw new Error("Parsed element is not an SVG element");
+      }
+
+      // Get classes from placeholder and add current color class
+      const classes = Array.from(placeholder.classList)
+        .filter(cls => cls !== 'illus-placeholder');
+
+      if (this.currentColorClass) {
+        classes.push(this.currentColorClass);
+      }
+
+      // Apply classes to SVG using setAttribute
+      svgElem.setAttribute('class', classes.join(' '));
+
+      // Position and style the SVG
+      const top = index < 2
+        ? `calc(25vh * ${index + 1})`
+        : `${this.SECTION_HEIGHT / 2 + this.SECTION_HEIGHT * (index - 1)}px`;
+
+      const rotationDirection = index % 2 === 0 ? -1 : 1;
+      const rotation = this._getRandomArbitrary(10, 15) * rotationDirection;
+
+      svgElem.style.cssText = `
+        position: absolute;
+        z-index: 2;
+        top: ${top};
+        ${index % 2 ? "left: -15vw;" : "right: -15vw;"}
+        transform: rotate(${rotation}deg);
+        height: ${this.SVG_SIZE};
+        width: ${this.SVG_SIZE};
+        transition: all 0.3s ease;
+      `;
+
+      const viewBox = this.extractViewBox(svgDoc);
+      svgElem.setAttribute('viewBox', viewBox);
+      svgElem.setAttribute('aria-hidden', 'true');
+      svgElem.setAttribute('focusable', 'false');
+
+      // Replace the placeholder
+      if (placeholder.parentNode) {
+        placeholder.parentNode.replaceChild(svgElem, placeholder);
+
+        // Ensure color class is applied immediately after replacement
+        if (this.currentColorClass) {
+          svgElem.classList.add(this.currentColorClass);
+        }
+
+        return true;
+      }
+      return false;
+
     } catch (error) {
-      console.error("Error during initialization:", error);
+      console.error(`Error loading SVG "${svgName}":`, error);
+      return false;
     }
   }
 
@@ -28,136 +169,145 @@ class Svg {
     if (this.svgCache.has(name)) {
       return this.svgCache.get(name);
     }
+    if (this.loadingSvgs.has(name)) {
+      return this.loadingSvgs.get(name);
+    }
+
     try {
-      const response = await fetch(`/assets/skp_illustrations/${name}.svg`);
-      if (!response.ok) throw new Error(`SVG not found: ${name}`);
-      const svgText = await response.text();
-      this.svgCache.set(name, svgText);
-      return svgText;
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+      const fetchPromise = fetch(`/assets/skp_illustrations/${name}.svg`, {
+        signal: controller.signal
+      })
+        .then(response => {
+          clearTimeout(timeoutId);
+          if (!response.ok) throw new Error(`SVG not found: ${name}`);
+          return response.text();
+        })
+        .then(svgText => {
+          this.svgCache.set(name, svgText);
+          this.loadingSvgs.delete(name);
+          return svgText;
+        })
+        .catch(error => {
+          console.error(`Error loading SVG "${name}":`, error);
+          this.loadingSvgs.delete(name);
+          return null;
+        });
+
+      this.loadingSvgs.set(name, fetchPromise);
+      return fetchPromise;
+
     } catch (error) {
       console.error(`Error loading SVG "${name}":`, error);
       return null;
     }
   }
 
-  extractViewBox(svgText) {
-    try {
-      const match = svgText.match(/viewBox="([^"]+)"/);
-      return match ? match[1] : "0 0 100 100"; // default viewBox if not found
-    } catch (error) {
-      console.error("Error extracting viewBox:", error);
-      return "0 0 100 100"; // default viewBox
-    }
-  }
-
-  _shuffleArray(array) {
-    if (!Array.isArray(array)) {
-      console.error("Invalid array provided to _shuffleArray");
-      return [];
-    }
-    let currentIndex = array.length,
-      randomIndex;
-    // While there remain elements to shuffle...
-    while (currentIndex != 0) {
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-      // And swap it with the current element.
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex],
-        array[currentIndex],
-      ];
-    }
-    return array;
-  }
-
-  _getFruits(svgArray, nbrFruits) {
-    if (!Array.isArray(svgArray) || typeof nbrFruits !== "number") {
-      console.error("Invalid parameters for _getFruits");
-      return [];
-    }
-    const shuffled = this._shuffleArray([...svgArray]);
-    return shuffled.slice(0, nbrFruits);
-  }
-
   async showSvg(elem) {
+    this.currentElement = elem;
+    if (!elem || !elem.offsetHeight) {
+      console.warn("Invalid element passed to showSvg");
+      return;
+    }
+
     try {
-      if (!elem || !elem.offsetHeight) {
-        console.error("Invalid element passed to showSvg");
-        return;
-      }
+      // Clear existing elements
+      const existingSvgs = elem.querySelectorAll('.illus, .illus-placeholder');
+      existingSvgs.forEach(svg => svg.remove());
 
-      if (this.SVG_CONTENT.length === 0) {
-        await this.initialize();
-      }
-
+      // Calculate number of SVGs needed
       const nbrFruits = Math.floor(elem.offsetHeight / this.SECTION_HEIGHT);
-      const fruits = this._getFruits(this.SVG_CONTENT, nbrFruits);
-      const fragment = document.createDocumentFragment();
 
-      fruits.forEach((fruit, i) => {
-        try {
-          // Parse the SVG text into an SVG DOM element
-          const parser = new DOMParser();
-          const svgDoc = parser.parseFromString(fruit[0], "image/svg+xml");
-          const svgElem = svgDoc.documentElement;
+      // Get random selection of names
+      const selectedNames = this._shuffleArray([...this.ILLUSTRATION_NAMES])
+        .slice(0, nbrFruits);
 
-          // Check if parsing produced a valid SVG element
-          if (!(svgElem instanceof SVGElement)) {
-            throw new Error("Parsed element is not an SVG element");
-          }
+      // Check current color class from header
+      const header = document.querySelector('.header');
+      if (header) {
+        const colorClasses = ['bgpink', 'bggreen', 'bgyellow', 'bgwhite'];
+        this.currentColorClass = colorClasses.find(cls => header.classList.contains(cls));
+      }
 
-          // Apply classes to the SVG element
-          svgElem.classList.add("illus", i % 2 ? "left" : "right");
+      // Create placeholders with current color class
+      selectedNames.forEach((name, i) => {
+        const placeholder = document.createElement('div');
+        placeholder.classList.add('illus-placeholder', 'illus');
+        placeholder.classList.add(i % 2 ? 'left' : 'right');
 
-          const top =
-            i < 2
-              ? `calc(25vh * ${i + 1})`
-              : `${this.SECTION_HEIGHT / 2 + this.SECTION_HEIGHT * (i - 1)}px`;
-          const rotation = this._getRandomArbitrary(10, 15) * (i % 2 ? 1 : -1);
-
-          // Apply styles directly to the SVG element
-          svgElem.style.cssText = `
-            position: absolute;
-            z-index: 2;
-            top: ${top};
-            ${i % 2 ? "left: -15vw;" : "right: -15vw;"}
-            transform: rotate(${rotation}deg);
-            height: ${this.SVG_SIZE};
-            width: ${this.SVG_SIZE};
-          `;
-
-          // Optionally, set attributes using GSAP if needed
-          if (typeof gsap !== "undefined") {
-            gsap.set(svgElem, {
-              attr: {
-                viewBox: fruit[1],
-              },
-            });
-          } else {
-            console.warn("GSAP is not available.");
-            // Fallback: set the viewBox directly
-            svgElem.setAttribute("viewBox", fruit[1]);
-          }
-
-          fragment.appendChild(svgElem);
-        } catch (error) {
-          console.error(`Error processing fruit at index ${i}:`, error);
+        if (this.currentColorClass) {
+          placeholder.classList.add(this.currentColorClass);
         }
+
+        const top = i < 2
+          ? `calc(25vh * ${i + 1})`
+          : `${this.SECTION_HEIGHT / 2 + this.SECTION_HEIGHT * (i - 1)}px`;
+        const rotation = this._getRandomArbitrary(10, 15) * (i % 2 ? 1 : -1);
+
+        placeholder.style.cssText = `
+          position: absolute;
+          z-index: 2;
+          top: ${top};
+          ${i % 2 ? "left: -15vw;" : "right: -15vw;"}
+          transform: rotate(${rotation}deg);
+          height: ${this.SVG_SIZE};
+          width: ${this.SVG_SIZE};
+          background: rgba(0,0,0,0);
+          transition: all 0.3s ease;
+        `;
+
+        placeholder.dataset.svgName = name;
+        placeholder.dataset.svgIndex = i;
+
+        elem.appendChild(placeholder);
+        this.observer.observe(placeholder);
       });
 
-      elem.appendChild(fragment);
     } catch (error) {
       console.error("Error in showSvg:", error);
     }
   }
 
-  _getRandomArbitrary(min, max) {
-    if (typeof min !== "number" || typeof max !== "number") {
-      console.error("Invalid parameters for _getRandomArbitrary");
-      return 0;
+  extractViewBox(svgDoc) {
+    try {
+      const svgElem = svgDoc.documentElement;
+      const viewBox = svgElem.getAttribute('viewBox');
+      return viewBox || '0 0 100 100';
+    } catch (error) {
+      console.error('Error extracting viewBox:', error);
+      return '0 0 100 100';
     }
+  }
+
+  _shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  }
+
+  _getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
+  }
+
+  cleanup() {
+    if (this.observer) {
+      this.observer.disconnect();
+      this.observer = null;
+    }
+    if (this.colorObserver) {
+      this.colorObserver.disconnect();
+      this.colorObserver = null;
+    }
+    window.removeEventListener('resize', this.handleResize.bind(this));
+    this.svgCache.clear();
+    this.loadingSvgs.clear();
+    this.currentElement = null;
+    this.currentColorClass = null;
   }
 }
 

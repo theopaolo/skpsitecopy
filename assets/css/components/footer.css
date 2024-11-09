@@ -23,6 +23,16 @@ footer ul li {
     font-size: 0.8rem;
 }
 
+footer .signature > a {
+    margin-bottom: 1rem;
+}
+
+footer .authors a{
+    padding: .25rem 0.5rem;
+    border-radius: 9999px;
+    border: 1px solid;
+}
+
 footer .signature {
     margin: 2rem 0;
 }

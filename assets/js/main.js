@@ -125,8 +125,8 @@ function setupHomePage() {
   const header = document.querySelector(".header");
   header.style.color = "#FFE019";
   const bgsType = document.querySelectorAll(".bgcolor");
-  const allIllus = document.querySelectorAll(".illus");
-  const donate = document.querySelector(".donate");
+  const donateBubbles = document.querySelectorAll(".donate, .shopbubl");
+
   const bgcolors = ["bgpink", "bggreen", "bgyellow"];
   let classes = "\\b(" + bgcolors.join("|") + ")\\b";
   const regex = new RegExp(classes, "i");
@@ -135,40 +135,58 @@ function setupHomePage() {
     entries.forEach((entry) => {
       let entryclass = entry.target.classList.value;
       const matchedClass = entryclass.match(regex);
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && matchedClass) {
         header.classList.add(matchedClass[0]);
-        donate.classList.add(matchedClass[0]);
-        allIllus.forEach((illu) => {
-          illu.classList.add(matchedClass[0]);
+        donateBubbles.forEach((bubble) => {
+          bubble.classList.add(matchedClass[0]);
         });
-      } else {
+        // SVG class will handle illustration colors automatically
+      } else if (matchedClass) {
         header.classList.remove(matchedClass[0]);
-        donate.classList.remove(matchedClass[0]);
-        allIllus.forEach((illu) => {
-          illu.classList.remove(matchedClass[0]);
+        donateBubbles.forEach((bubble) => {
+          bubble.classList.remove(matchedClass[0]);
         });
+        // SVG class will handle illustration colors automatically
       }
     });
   });
 
-  Array.prototype.forEach.call(bgsType, (el) => {
+  bgsType.forEach((el) => {
     observer.observe(el);
   });
 }
 
 function setupOtherPages(namespace) {
+  const header = document.querySelector(".header");
+  if (!header) {
+    return;
+  }
+
+  // Remove existing background color classes
+  console.log('should remove existing classes');
+  const bgcolors = ["bgpink", "bggreen", "bgyellow", "bgwhite"];
+  bgcolors.forEach((color) => header.classList.remove(color));
+
   switch (namespace) {
     case "journal":
     case "publication":
-      _changeColors("#E5194C", "bgwhite");
+      header.style.color = "#07453A";
+      header.classList.add("bgwhite");
       break;
     case "about":
+      header.style.color = "#07453A";
+      header.classList.add("bgwhite");
+      break;
     case "involved":
-      _changeColors("#07453A", "bgyellow");
+      header.style.color = "#07453A";
+      header.classList.add("bgyellow");
       break;
     case "donate":
-      _changeColors("#FFE019", "bgpink");
+      header.style.color = "#FFE019";
+      header.classList.add("bgpink");
       break;
+    default:
+      console.log("No specific styles for namespace:", namespace);
   }
 }
 
@@ -192,13 +210,16 @@ barba.init({
     {
       name: "opacity-transition",
       async leave(data) {
+        const existingSvgs = document.querySelectorAll('.illus, .illus-placeholder');
+        existingSvgs.forEach(svg => svg.remove());
         await Animation.leave(data.current.container);
       },
       async enter(data) {
         try {
-          await svg.initialize();
           await svg.showSvg(data.next.container);
+
           const goalsCards = document.querySelectorAll('.goal');  // Make sure to get elements after transition
+
           if (goalsCards.length > 0) {
             Animation.cardSlide(goalsCards);
           }
@@ -211,6 +232,7 @@ barba.init({
             if (support !== "mobile") {
 
               const goalsCards = document.querySelectorAll('.goal');  // Make sure to get elements after transition
+
               if (goalsCards.length > 0) {
                 Animation.cardSlide(goalsCards);
               }
@@ -228,7 +250,6 @@ barba.init({
       },
       async once(data) {
         try {
-          await svg.initialize();
           await svg.showSvg(data.next.container);
           const goalsCards = document.querySelectorAll('.goal');  // Make sure to get elements on page load
 

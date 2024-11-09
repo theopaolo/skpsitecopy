@@ -108,7 +108,7 @@
         line-height: 7vw;
     }
     .goals-content {
-        grid-template-columns: unset;
+        flex-direction: column;
     }
     .roulette {
         display: flex;

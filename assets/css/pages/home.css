@@ -219,6 +219,7 @@
 
 .goals-content {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   max-width: 65rem;
   margin: 0 auto;
@@ -233,6 +234,9 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  min-width: 300px;
+  background-color: var(--color-yellow);
+  color: var(--color-green);
 }
 
 .goals-wrapper {

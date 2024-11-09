@@ -62,7 +62,11 @@
         <?php endif ?>
     </div>
     <div class="flex justify-center signature flex-col items-center">
-      <p> <a href="https://nadiners.com/" target="_blank">Design:  Nadine</a>,  <a href="https://www.instagram.com/milena_illustrations/" target="_blank">Illustrations: Milena</a>, <a href="https://theogoedert.com" target="_blank">Code: Théo</a></p>
       <a href="https://shimsham.design" target="_blank"><?= svg('assets/img/logoshsh.svg') ?></a>
+      <div class="authors">
+        <a href="https://nadiners.com/" target="_blank">Design by Nadine RS</a>
+        <a href="https://www.instagram.com/milena_illustrations/" target="_blank">Illustrations by Milena W</a>
+        <a href="https://theogoedert.com" target="_blank">Code by Théo GS</a>
+      </div>
     </div>
 </footer>
